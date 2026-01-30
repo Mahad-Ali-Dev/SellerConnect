@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/magicui/shimmer-button";
+import MagicWrapper from "@/components/client/MagicWrapper";
 import {
     Mail,
     Phone,
@@ -198,11 +199,10 @@ export default function ContactPage() {
 
                             {/* Status Messages */}
                             {submitStatus && (
-                                <div className={`flex items-center gap-2 px-4 py-3 rounded-xl mb-6 text-sm ${
-                                    submitStatus.type === "success"
+                                <div className={`flex items-center gap-2 px-4 py-3 rounded-xl mb-6 text-sm ${submitStatus.type === "success"
                                         ? "bg-green-500/10 border border-green-500/20 text-green-400"
                                         : "bg-red-500/10 border border-red-500/20 text-red-400"
-                                }`}>
+                                    }`}>
                                     {submitStatus.type === "success" ? (
                                         <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                                     ) : (
@@ -418,10 +418,12 @@ export default function ContactPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/bol/aanvraagformulier">
-                                <ShimmerButton className="shadow-2xl h-14 px-8 text-base font-medium rounded-xl">
-                                    Direct Starten
-                                    <ArrowRight className="w-5 h-5 ml-2" />
-                                </ShimmerButton>
+                                <MagicWrapper>
+                                    <ShimmerButton className="shadow-2xl h-14 px-8 text-base font-medium rounded-xl">
+                                        Direct Starten
+                                        <ArrowRight className="w-5 h-5 ml-2" />
+                                    </ShimmerButton>
+                                </MagicWrapper>
                             </Link>
                             <a
                                 href="https://wa.me/+31684071168?text=Hallo%20SellerConnect"

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/magicui/shimmer-button";
+import MagicWrapper from "@/components/client/MagicWrapper";
 import { ArrowRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
 import { BusinessGrowthAnimation } from "./business-growth-animation";
@@ -70,10 +71,12 @@ export function Hero() {
                                 className="flex flex-col sm:flex-row gap-4"
                             >
                                 <Link href="/auth/register">
-                                    <ShimmerButton className="h-14 px-8 text-base font-medium rounded-xl">
-                                        Get Started Free
-                                        <ArrowRight className="w-5 h-5 ml-2" />
-                                    </ShimmerButton>
+                                    <MagicWrapper>
+                                        <ShimmerButton className="h-14 px-8 text-base font-medium rounded-xl">
+                                            Get Started Free
+                                            <ArrowRight className="w-5 h-5 ml-2" />
+                                        </ShimmerButton>
+                                    </MagicWrapper>
                                 </Link>
                                 <Button
                                     size="lg"

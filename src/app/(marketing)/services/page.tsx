@@ -45,6 +45,7 @@ import { LampContainer } from "@/components/ui/lamp";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import ShimmerButton from "@/components/magicui/shimmer-button";
+import MagicWrapper from "@/components/client/MagicWrapper";
 
 // ============ SERVICE DATA ============
 const serviceCategories = [
@@ -624,10 +625,12 @@ export default function ServicesPage() {
                         className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
                         <Link href="/contact">
-                            <ShimmerButton className="h-14 px-10 text-lg font-medium rounded-xl">
-                                Gratis Strategiegesprek
-                                <ArrowRight className="w-5 h-5 ml-2" />
-                            </ShimmerButton>
+                            <MagicWrapper>
+                                <ShimmerButton className="h-14 px-10 text-lg font-medium rounded-xl">
+                                    Gratis Strategiegesprek
+                                    <ArrowRight className="w-5 h-5 ml-2" />
+                                </ShimmerButton>
+                            </MagicWrapper>
                         </Link>
                         <a href="https://wa.me/+31684071168" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="h-14 px-8 bg-[#25D366] hover:bg-[#22c55e] text-white rounded-xl">

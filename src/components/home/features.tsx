@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import ShimmerButton from "@/components/magicui/shimmer-button";
+import MagicWrapper from "@/components/client/MagicWrapper";
 import {
     Package,
     BarChart3,
@@ -167,10 +168,12 @@ export function Features() {
                     className="text-center mt-16"
                 >
                     <Link href="/pricing">
-                        <ShimmerButton className="shadow-2xl h-12 px-6 rounded-xl">
-                            View all pricing
-                            <ArrowRight className="w-5 h-5 ml-2" />
-                        </ShimmerButton>
+                        <MagicWrapper>
+                            <ShimmerButton className="shadow-2xl h-12 px-6 rounded-xl">
+                                View all pricing
+                                <ArrowRight className="w-5 h-5 ml-2" />
+                            </ShimmerButton>
+                        </MagicWrapper>
                     </Link>
                 </motion.div>
             </div>

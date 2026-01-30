@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Globe, Laptop } from "lucide-react";
 import Link from "next/link";
 import ShimmerButton from "@/components/magicui/shimmer-button";
+import MagicWrapper from "@/components/client/MagicWrapper";
 
 export default function Home() {
     return (
@@ -61,7 +62,9 @@ export default function Home() {
                                 ))}
                             </ul>
                             <Link href="/services/ecommerce">
-                                <ShimmerButton className="h-12 px-8">Start Webshop</ShimmerButton>
+                                <MagicWrapper>
+                                    <ShimmerButton className="h-12 px-8">Start Webshop</ShimmerButton>
+                                </MagicWrapper>
                             </Link>
                         </motion.div>
 
@@ -115,7 +118,9 @@ export default function Home() {
                         Join hundreds of sellers who have automated their operations with ConnectSeller.
                     </p>
                     <Link href="/auth/register">
-                        <ShimmerButton className="h-14 px-10 text-lg shadow-2xl shadow-primary/20">Direct Starten</ShimmerButton>
+                        <MagicWrapper>
+                            <ShimmerButton className="h-14 px-10 text-lg shadow-2xl shadow-primary/20">Direct Starten</ShimmerButton>
+                        </MagicWrapper>
                     </Link>
                 </div>
             </section>
