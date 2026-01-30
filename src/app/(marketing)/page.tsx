@@ -1,4 +1,3 @@
-export const dynamic = "force-dynamic";
 
 import { Hero } from "@/components/home/hero";
 import { TrustedBySection } from "@/components/home/trusted-by-section";
