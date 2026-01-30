@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import Particles from "@/components/magicui/particles";
 import ShimmerButton from "@/components/magicui/shimmer-button";
-import MagicWrapper from "@/components/client/MagicWrapper";
 import TypingAnimation from "@/components/magicui/typing-animation";
 import { motion } from "framer-motion";
 import { CheckCircle2, TrendingUp, Zap, Shield } from "lucide-react";
@@ -78,11 +77,9 @@ export function HeroSection() {
                             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4"
                         >
                             <Link href="/auth/register" className="w-full sm:w-auto">
-                                <MagicWrapper>
-                                    <ShimmerButton className="shadow-2xl shadow-primary/40 font-bold text-lg h-14 px-8 rounded-full w-full">
-                                        <span className="text-white">Start Free Trial</span>
-                                    </ShimmerButton>
-                                </MagicWrapper>
+                                <ShimmerButton className="shadow-2xl shadow-primary/40 font-bold text-lg h-14 px-8 rounded-full w-full">
+                                    <span className="text-white">Start Free Trial</span>
+                                </ShimmerButton>
                             </Link>
 
                             <Link href="/pricing" className="w-full sm:w-auto">

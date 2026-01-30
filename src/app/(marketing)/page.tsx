@@ -1,13 +1,10 @@
-"use client";
 
 import { HeroSection } from "@/components/home/hero-section";
 import { ServicesGrid } from "@/components/home/service-grid";
 import { SocialProofSection } from "@/components/home/social-proof";
-import { motion } from "framer-motion";
 import { Globe, Laptop } from "lucide-react";
 import Link from "next/link";
 import ShimmerButton from "@/components/magicui/shimmer-button";
-import MagicWrapper from "@/components/client/MagicWrapper";
 
 export default function Home() {
     return (
@@ -36,10 +33,7 @@ export default function Home() {
             <section className="py-24 relative overflow-hidden">
                 <div className="container px-4 md:px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
+                        <div
                             className="relative z-10"
                         >
                             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
@@ -62,16 +56,11 @@ export default function Home() {
                                 ))}
                             </ul>
                             <Link href="/services/ecommerce">
-                                <MagicWrapper>
-                                    <ShimmerButton className="h-12 px-8">Start Webshop</ShimmerButton>
-                                </MagicWrapper>
+                                <ShimmerButton className="h-12 px-8">Start Webshop</ShimmerButton>
                             </Link>
-                        </motion.div>
+                        </div>
 
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
+                        <div
                             className="relative"
                         >
                             <div className="aspect-square md:aspect-video rounded-3xl bg-gradient-to-br from-gray-900 to-black border border-white/10 shadow-2xl overflow-hidden relative">
@@ -103,7 +92,7 @@ export default function Home() {
                                     <div className="text-xs text-muted-foreground">Bol.com ↔ Webshop</div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -118,9 +107,7 @@ export default function Home() {
                         Join hundreds of sellers who have automated their operations with ConnectSeller.
                     </p>
                     <Link href="/auth/register">
-                        <MagicWrapper>
-                            <ShimmerButton className="h-14 px-10 text-lg shadow-2xl shadow-primary/20">Direct Starten</ShimmerButton>
-                        </MagicWrapper>
+                        <ShimmerButton className="h-14 px-10 text-lg shadow-2xl shadow-primary/20">Direct Starten</ShimmerButton>
                     </Link>
                 </div>
             </section>

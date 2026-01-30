@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "@/components/home/hero";
 import { TrustedBySection } from "@/components/home/trusted-by-section";
 import { GeminiEffectSection } from "@/components/home/gemini-effect-section";
@@ -12,7 +14,7 @@ import { TestimonialsGrid } from "@/components/home/testimonials-grid";
 import { FAQ } from "@/components/home/faq";
 import { CTA } from "@/components/home/cta";
 
-export default function Home() {
+export default function HomeUI() {
   return (
     <>
       <Hero />
