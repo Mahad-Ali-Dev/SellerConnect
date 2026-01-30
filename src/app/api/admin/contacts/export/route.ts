@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import * as XLSX from "xlsx";
 import dbConnect from "@/lib/db";
 import ContactSubmission from "@/models/ContactSubmission";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 async function isAdmin() {
     const session = await getServerSession(authOptions);
