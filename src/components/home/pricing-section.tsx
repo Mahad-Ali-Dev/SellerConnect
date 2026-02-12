@@ -190,7 +190,7 @@ export function PricingSection() {
                                 </ul>
 
                                 {/* CTA Button */}
-                                <Link href={plan.ctaLink || (plan.monthlyPrice === "Custom" ? "/contact" : "/auth/register")} className="block">
+                                <Link href={plan.ctaLink || (plan.monthlyPrice === "Custom" ? "/contact" : "/contact")} className="block">
                                     <Button
                                         className={`w-full h-12 rounded-xl font-medium transition-all ${plan.popular
                                             ? 'bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25'
