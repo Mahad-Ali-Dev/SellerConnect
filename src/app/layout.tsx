@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Bol producten toevoegen, Bol product listing, Bol fulfillment, Bol stock controle.",
 };
 
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,6 +38,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <ScrollToTop />
         </AuthProvider>
       </body>
     </html>

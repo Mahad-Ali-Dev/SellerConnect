@@ -410,7 +410,7 @@ export default function BolAanvraagformulierPage() {
                                         <div className="space-y-2 text-sm">
                                             <div className="flex items-center gap-2 text-[#94A3B8]">
                                                 <Phone className="w-4 h-4 text-[#6366F1]" />
-                                                +31 6 84071168
+                                                +31 85 401 2968
                                             </div>
                                             <div className="flex items-center gap-2 text-[#94A3B8]">
                                                 <Mail className="w-4 h-4 text-[#6366F1]" />

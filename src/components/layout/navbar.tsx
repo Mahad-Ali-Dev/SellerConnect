@@ -68,7 +68,7 @@ export function Navbar() {
     return (
         <header
             className={cn(
-                "fixed top-0 w-full z-50 transition-all duration-300 h-[72px]",
+                "fixed top-0 w-full z-[100] transition-all duration-300 h-[72px]",
                 isScrolled
                     ? "bg-[#020617]/80 backdrop-blur-xl border-b border-[#1E293B]/50"
                     : "bg-transparent"
@@ -165,7 +165,7 @@ export function Navbar() {
                 <div className="hidden lg:flex items-center gap-3">
                     {/* WhatsApp CTA */}
                     <a
-                        href="https://wa.me/+31684071168?text=Hallo%20SellerConnect"
+                        href="https://wa.me/+31854012968?text=Hallo%20SellerConnect"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 h-10 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] hover:bg-[#25D366]/20 transition-all"
@@ -202,21 +202,6 @@ export function Navbar() {
                         </>
                     ) : (
                         <>
-                            <Link href="/auth/login">
-                                <Button
-                                    variant="ghost"
-                                    className="text-[#94A3B8] hover:text-[#F8FAFC] hover:bg-[#1E293B]/50 rounded-lg px-5 h-10"
-                                >
-                                    Inloggen
-                                </Button>
-                            </Link>
-                            <Link href="/auth/register">
-                                <Button
-                                    className="h-10 px-5 text-sm font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 transition-opacity text-white shadow-lg shadow-[#6366F1]/25"
-                                >
-                                    Direct Starten
-                                </Button>
-                            </Link>
                         </>
                     )}
                 </div>
@@ -237,7 +222,7 @@ export function Navbar() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: "100%" }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                            className="fixed inset-0 z-40 bg-[#020617] lg:hidden flex flex-col pt-24 px-6 overflow-y-auto"
+                            className="fixed inset-0 top-[72px] bottom-0 z-[90] bg-[#020617] lg:hidden flex flex-col pt-6 px-6 overflow-y-auto h-[calc(100dvh-72px)]"
                         >
                             <nav className="flex flex-col gap-2">
                                 {navItems.map((item, index) =>
@@ -315,23 +300,7 @@ export function Navbar() {
                                     )
                                 )}
                             </nav>
-                            <div className="mt-auto mb-10 flex flex-col gap-3">
-                                <Link href="/auth/login" onClick={() => setMobileMenuOpen(false)}>
-                                    <Button
-                                        variant="outline"
-                                        className="w-full rounded-xl border-[#1E293B] text-[#F8FAFC] hover:bg-[#1E293B]/50 h-14 text-base"
-                                    >
-                                        Inloggen
-                                    </Button>
-                                </Link>
-                                <Link href="/auth/register" onClick={() => setMobileMenuOpen(false)}>
-                                    <Button
-                                        className="w-full rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white h-14 text-base shadow-lg shadow-[#6366F1]/25"
-                                    >
-                                        Direct Starten
-                                    </Button>
-                                </Link>
-                            </div>
+
                         </motion.div>
                     )}
                 </AnimatePresence>

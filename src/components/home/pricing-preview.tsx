@@ -20,7 +20,9 @@ const plans = [
             "Email support",
             "Dashboard access",
             "API access",
-        ]
+        ],
+        cta: "Start Nu",
+        ctaLink: "/contact",
     },
     {
         name: "Premium",
@@ -36,7 +38,9 @@ const plans = [
             "Analytics dashboard",
             "Full API integration",
             "Multi-channel sync",
-        ]
+        ],
+        cta: "Start Nu",
+        ctaLink: "/contact",
     },
     {
         name: "Business",
@@ -53,7 +57,9 @@ const plans = [
             "Full API access",
             "Dedicated manager",
             "Custom integrations",
-        ]
+        ],
+        cta: "Neem Contact Op",
+        ctaLink: "/contact",
     },
 ];
 

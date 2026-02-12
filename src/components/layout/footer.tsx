@@ -32,6 +32,16 @@ export function Footer() {
                                 <Github className="w-5 h-5" />
                             </Link>
                         </div>
+
+                        {/* KVK Badge in Footer */}
+                        <div className="mt-8 pt-6 border-t border-[#1E293B]/50 inline-block">
+                            <p className="text-[#64748B] text-xs uppercase tracking-wider mb-1 font-semibold">
+                                KVK Nummer
+                            </p>
+                            <p className="text-3xl font-bold text-white tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                                99682397
+                            </p>
+                        </div>
                     </div>
 
                     {/* Product */}
@@ -73,9 +83,14 @@ export function Footer() {
                     <p className="text-sm text-[#64748B]">
                         © {new Date().getFullYear()} SellerConnect. All rights reserved.
                     </p>
-                    <p className="text-sm text-[#64748B]">
-                        Built with <span className="text-[#6366F1]">precision</span> in Amsterdam
-                    </p>
+                    <div className="flex items-center gap-6">
+                        <p className="text-sm text-[#64748B]">
+                            Built with <span className="text-[#6366F1]">precision</span> in Amsterdam
+                        </p>
+                        <Link href="/admin" className="text-xs text-[#64748B] opacity-20 hover:opacity-100 transition-all">
+                            Admin
+                        </Link>
+                    </div>
                 </div>
             </div>
         </footer>

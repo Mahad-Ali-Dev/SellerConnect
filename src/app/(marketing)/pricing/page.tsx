@@ -25,61 +25,45 @@ import {
 } from "@/components/ui/accordion";
 
 // Software Plans
+// Software Plans
 const softwarePlans = [
     {
         name: "Starter",
         description: "Voor beginners",
-        monthlyPrice: "999",
-        yearlyPrice: "9.590",
+        monthlyPrice: "199",
+        yearlyPrice: "2.028",
         icon: Zap,
         popular: false,
         features: [
-            "Winkelbeheer Module",
-            "1 Bol winkel koppeling",
-            "Product Toevoegen: 500/pm",
-            "Product Zoeken: 5.000/pm",
-            "Co-Pilot Voorraadcontrole",
-            "WooCommerce Integratie",
+            "Customer service ",
+            "Order Management",
+            "Cost per Employee 150 to 180",
         ],
     },
     {
-        name: "Pro",
-        description: "Voor gevorderden",
-        monthlyPrice: "1.490",
-        yearlyPrice: "14.290",
+        name: "Premium",
+        description: "Voor groeiende bedrijven",
+        monthlyPrice: "299",
+        yearlyPrice: "2.988",
         icon: Crown,
         popular: true,
         features: [
-            "Winkelbeheer Module",
-            "1 Bol winkel koppeling",
-            "Product Toevoegen: 1.000/pm",
-            "Product Zoeken: 10.000/pm",
-            "Co-Pilot Voorraadcontrole",
-            "Productcontrole: 75.000/dagelijks",
-            "WooCommerce Integratie",
-            "Fulfillment Modules",
-            "Factuurautomatisering",
+            "Product support ",
+            "Account Management",
+            "Order tracking ",
         ],
     },
     {
-        name: "Business",
-        description: "Voor ervaren verkopers",
-        monthlyPrice: "Op maat",
+        name: "Enterprise",
+        description: "Voor grote organisaties",
+        monthlyPrice: "400+",
         yearlyPrice: "Op maat",
         icon: Rocket,
         popular: false,
         features: [
-            "Winkelbeheer Module",
-            "1+ Bol winkels koppeling",
-            "Product Toevoegen: 1.000+/pm",
-            "Product Zoeken: 10.000+/pm",
-            "Co-Pilot Voorraadcontrole",
-            "Productcontrole: 75.000+/dagelijks",
-            "WooCommerce Integratie",
-            "Fulfillment Modules",
-            "Factuurautomatisering",
-            "CRM Modules",
-            "Operaties Teams",
+            "Dedicated Account Management ",
+            "Reporting",
+            "Strategic Support"
         ],
     },
 ];
@@ -251,7 +235,12 @@ export default function PricingPage() {
                                             <>
                                                 <span className="text-4xl font-bold text-[#F8FAFC]">€{plan.monthlyPrice}</span>
                                                 <span className="text-[#64748B]">/maand</span>
-                                                <div className="text-xs text-[#64748B] mt-1">of €{plan.yearlyPrice}/jaar</div>
+                                                <div className="text-xs text-[#64748B] mt-1">
+                                                    {plan.yearlyPrice === "Op maat"
+                                                        ? "Jaarlijks op maat"
+                                                        : `of €${plan.yearlyPrice}/jaar`
+                                                    }
+                                                </div>
                                             </>
                                         )}
                                     </div>
@@ -267,7 +256,7 @@ export default function PricingPage() {
                                         ))}
                                     </ul>
 
-                                    <Link href={plan.monthlyPrice === "Op maat" ? "/contact" : "/bol/aanvraagformulier"} className="block">
+                                    <Link href="/contact" className="block">
                                         {plan.popular ? (
                                             <ShimmerButton className="w-full shadow-2xl h-11 rounded-xl">
                                                 Direct Starten

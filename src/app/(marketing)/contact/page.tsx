@@ -31,15 +31,15 @@ const contactInfo = [
     {
         icon: MessageCircle,
         title: "WhatsApp",
-        value: "+31 6 84071168",
-        link: "https://wa.me/+31684071168?text=Hallo%20SellerConnect",
+        value: "+31 85 401 2968",
+        link: "https://wa.me/+31854012968?text=Hallo%20SellerConnect",
         color: "#25D366",
     },
     {
         icon: Mail,
         title: "E-mail",
-        value: "info@metazon.nl",
-        link: "mailto:info@metazon.nl",
+        value: "info@sellerconnect.nl",
+        link: "mailto:info@sellerconnect.nl",
         color: "#6366F1",
     },
     {
@@ -52,7 +52,7 @@ const contactInfo = [
 ];
 
 const businessInfo = [
-    { label: "KvK", value: "88792757" },
+    { label: "KvK", value: "99682397" },
     { label: "BTW", value: "NL864780539B01" },
 ];
 
@@ -200,8 +200,8 @@ export default function ContactPage() {
                             {/* Status Messages */}
                             {submitStatus && (
                                 <div className={`flex items-center gap-2 px-4 py-3 rounded-xl mb-6 text-sm ${submitStatus.type === "success"
-                                        ? "bg-green-500/10 border border-green-500/20 text-green-400"
-                                        : "bg-red-500/10 border border-red-500/20 text-red-400"
+                                    ? "bg-green-500/10 border border-green-500/20 text-green-400"
+                                    : "bg-red-500/10 border border-red-500/20 text-red-400"
                                     }`}>
                                     {submitStatus.type === "success" ? (
                                         <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
@@ -343,7 +343,7 @@ export default function ContactPage() {
 
                             {/* WhatsApp Direct Button */}
                             <a
-                                href="https://wa.me/+31684071168?text=Hallo%20SellerConnect"
+                                href="https://wa.me/+31854012968?text=Hallo%20SellerConnect"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-6 flex items-center justify-center gap-3 w-full h-14 bg-[#25D366] hover:bg-[#22c55e] text-white rounded-xl transition-colors font-medium"
@@ -426,7 +426,7 @@ export default function ContactPage() {
                                 </MagicWrapper>
                             </Link>
                             <a
-                                href="https://wa.me/+31684071168?text=Hallo%20SellerConnect"
+                                href="https://wa.me/+31854012968?text=Hallo%20SellerConnect"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

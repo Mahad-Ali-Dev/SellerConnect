@@ -1,29 +1,36 @@
 export const dynamic = "force-dynamic";
 
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import dbConnect from "@/lib/db";
-import User from "@/models/User";
-import { authOptions } from "@/lib/auth";
-
-// Check if user is admin
-async function isAdmin() {
-    const session = await getServerSession(authOptions);
-    return session?.user?.role === "admin";
-}
+import { createClient } from "@/lib/supabase/server";
 
 // GET - List all users
 export async function GET() {
     try {
-        if (!(await isAdmin())) {
-            return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-        }
+        const supabase = await createClient();
 
-        await dbConnect();
+        // Auth Check
+        const { data: { user } } = await supabase.auth.getUser();
+        if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-        const users = await User.find({})
-            .select("-password")
-            .sort({ createdAt: -1 });
+        const { data: profile } = await supabase.from('profiles').select('role').eq('id', user.id).single();
+        if (profile?.role !== 'admin') return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+        // Fetch
+        const { data: profiles, error } = await supabase
+            .from('profiles')
+            .select('*')
+            .order('created_at', { ascending: false });
+
+        if (error) throw error;
+
+        // Map
+        const users = profiles.map(p => ({
+            _id: p.id,
+            name: p.name,
+            email: p.email,
+            role: p.role,
+            createdAt: p.created_at
+        }));
 
         return NextResponse.json({ users });
     } catch (error) {

@@ -1,9 +1,9 @@
 "use client";
 
-import { useSession } from "next-auth/react";
+import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
     LayoutDashboard,
     Users,
@@ -12,7 +12,6 @@ import {
     LogOut,
     Shield,
 } from "lucide-react";
-import { signOut } from "next-auth/react";
 
 const navItems = [
     { href: "/admin", icon: LayoutDashboard, label: "Dashboard" },
@@ -26,33 +25,51 @@ export default function AdminLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const { data: session, status } = useSession();
     const router = useRouter();
+    const [isLoading, setIsLoading] = useState(true);
+    const [user, setUser] = useState<any>(null);
 
     useEffect(() => {
-        if (status === "loading") return;
+        const checkUser = async () => {
+            const supabase = createClient();
+            const { data: { user } } = await supabase.auth.getUser();
 
-        if (!session) {
-            router.push("/auth/login");
-            return;
-        }
+            if (!user) {
+                router.push("/auth/login");
+                return;
+            }
 
-        if (session.user?.role !== "admin") {
-            router.push("/");
-            return;
-        }
-    }, [session, status, router]);
+            const { data: profile } = await supabase
+                .from('profiles')
+                .select('role, email') // fetching email too for display
+                .eq('id', user.id)
+                .single();
 
-    if (status === "loading") {
+            if (profile?.role !== 'admin') {
+                router.push("/");
+                return;
+            }
+
+            setUser({ ...user, ...profile }); // Merge profile data
+            setIsLoading(false);
+        };
+
+        checkUser();
+    }, [router]);
+
+    const handleSignOut = async () => {
+        const supabase = createClient();
+        await supabase.auth.signOut();
+        router.push("/auth/login");
+        router.refresh();
+    };
+
+    if (isLoading) {
         return (
             <div className="min-h-screen bg-[#020617] flex items-center justify-center">
                 <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#6366F1]"></div>
             </div>
         );
-    }
-
-    if (!session || session.user?.role !== "admin") {
-        return null;
     }
 
     return (
@@ -91,11 +108,11 @@ export default function AdminLayout({
 
                 {/* User & Logout */}
                 <div className="p-4 border-t border-[#1E293B]">
-                    <div className="text-sm text-[#94A3B8] mb-3 px-4">
-                        Ingelogd als: <span className="text-[#F8FAFC]">{session.user?.name}</span>
+                    <div className="text-sm text-[#94A3B8] mb-3 px-4 truncate">
+                        Ingelogd als: <span className="text-[#F8FAFC]">{user?.email}</span>
                     </div>
                     <button
-                        onClick={() => signOut({ callbackUrl: "/" })}
+                        onClick={handleSignOut}
                         className="flex items-center gap-3 px-4 py-3 rounded-xl text-red-400 hover:text-red-300 hover:bg-red-500/10 transition-colors w-full"
                     >
                         <LogOut className="w-5 h-5" />

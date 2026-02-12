@@ -70,10 +70,10 @@ export function Hero() {
                                 transition={{ delay: 0.4 }}
                                 className="flex flex-col sm:flex-row gap-4"
                             >
-                                <Link href="/auth/register">
+                                <Link href="/contact">
                                     <MagicWrapper>
                                         <ShimmerButton className="h-14 px-8 text-base font-medium rounded-xl">
-                                            Get Started Free
+                                            Neem Contact Op
                                             <ArrowRight className="w-5 h-5 ml-2" />
                                         </ShimmerButton>
                                     </MagicWrapper>

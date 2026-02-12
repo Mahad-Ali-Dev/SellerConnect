@@ -1,5 +1,6 @@
 export const dynamic = "force-dynamic";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -23,10 +24,11 @@ export async function POST(request: Request) {
             );
         }
 
-        const supabase = await createClient();
+        // Use Admin Client to bypass RLS for public submissions
+        const supabaseAdmin = createAdminClient();
 
         // Insert contact submission into Supabase
-        const { data, error } = await supabase
+        const { data, error } = await supabaseAdmin
             .from('contact_submissions')
             .insert({
                 name,
@@ -41,7 +43,7 @@ export async function POST(request: Request) {
         if (error) {
             console.error("Supabase error:", error);
             return NextResponse.json(
-                { error: "Fout bij het opslaan van je bericht" },
+                { error: error.message || "Fout bij het opslaan van je bericht" },
                 { status: 500 }
             );
         }
@@ -50,10 +52,10 @@ export async function POST(request: Request) {
             message: "Bedankt! Je bericht is verzonden. We nemen zo snel mogelijk contact met je op.",
             id: data.id
         });
-    } catch (error) {
+    } catch (error: any) {
         console.error("Contact API error:", error);
         return NextResponse.json(
-            { error: "Er is een fout opgetreden" },
+            { error: error.message || "Er is een fout opgetreden" },
             { status: 500 }
         );
     }
@@ -67,6 +69,19 @@ export async function GET(request: Request) {
         const { data: { user } } = await supabase.auth.getUser();
 
         if (!user) {
+            return NextResponse.json(
+                { error: "Niet geautoriseerd" },
+                { status: 401 }
+            );
+        }
+
+        const { data: profile } = await supabase
+            .from('profiles')
+            .select('role')
+            .eq('id', user.id)
+            .single();
+
+        if (profile?.role !== 'admin') {
             return NextResponse.json(
                 { error: "Niet geautoriseerd" },
                 { status: 401 }

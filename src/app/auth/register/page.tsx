@@ -69,6 +69,7 @@ export default function RegisterPage() {
                 router.push("/auth/login");
             }, 2000);
         } catch (err: any) {
+            console.error("Registration full error:", err);
             setError(err.message || "Er is een fout opgetreden bij het registreren");
         } finally {
             setIsLoading(false);
@@ -249,7 +250,7 @@ export default function RegisterPage() {
                         Bedankt voor je geduld! Neem contact met ons op via WhatsApp.
                     </p>
                     <a
-                        href="https://wa.me/+31684071168?text=Hallo%20SellerConnect"
+                        href="https://wa.me/+31854012968?text=Hallo%20SellerConnect"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#22c55e] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"

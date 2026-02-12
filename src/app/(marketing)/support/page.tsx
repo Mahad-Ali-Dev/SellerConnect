@@ -28,7 +28,7 @@ const supportOptions = [
         icon: MessageCircle,
         title: "WhatsApp Support",
         description: "Snelle ondersteuning via WhatsApp. Gemiddelde reactietijd: 2 uur.",
-        link: "https://wa.me/+31684071168?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag",
+        link: "https://wa.me/+31854012968?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag",
         buttonText: "Start Chat",
         color: "#25D366",
     },
@@ -36,7 +36,7 @@ const supportOptions = [
         icon: Mail,
         title: "E-mail Support",
         description: "Stuur ons een e-mail voor uitgebreide vragen. Reactie binnen 24 uur.",
-        link: "mailto:info@metazon.nl",
+        link: "mailto:info@sellerconnect.nl",
         buttonText: "Stuur E-mail",
         color: "#6366F1",
     },
@@ -293,7 +293,7 @@ export default function SupportPage() {
                                     </Button>
                                 </Link>
                                 <a
-                                    href="https://wa.me/+31684071168?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag"
+                                    href="https://wa.me/+31854012968?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

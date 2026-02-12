@@ -106,12 +106,12 @@ export function CTA() {
                         transition={{ delay: 0.3 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
-                        <Link href="/auth/register">
+                        <Link href="/contact">
                             <Button
                                 size="lg"
                                 className="h-14 px-8 text-base bg-white text-[#6366F1] hover:bg-white/90 rounded-xl shadow-xl shadow-black/20 font-semibold"
                             >
-                                Maak Gratis Account Aan
+                                Start Vandaag Nog
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Button>
                         </Link>

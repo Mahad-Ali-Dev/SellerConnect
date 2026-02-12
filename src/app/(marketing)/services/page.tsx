@@ -632,7 +632,7 @@ export default function ServicesPage() {
                                 </ShimmerButton>
                             </MagicWrapper>
                         </Link>
-                        <a href="https://wa.me/+31684071168" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/+31854012968?text=Hallo%20SellerConnect" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="h-14 px-8 bg-[#25D366] hover:bg-[#22c55e] text-white rounded-xl">
                                 <MessageCircle className="w-5 h-5 mr-2" />
                                 Direct WhatsApp
@@ -712,7 +712,7 @@ export default function ServicesPage() {
                                     <ArrowRight className="w-6 h-6 ml-3" />
                                 </ShimmerButton>
                             </Link>
-                            <a href="https://wa.me/+31684071168" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/+31854012968?text=Hallo%20SellerConnect" target="_blank" rel="noopener noreferrer">
                                 <Button size="lg" className="h-16 px-10 bg-[#25D366] hover:bg-[#22c55e] text-white rounded-2xl text-lg">
                                     <MessageCircle className="w-6 h-6 mr-3" />
                                     WhatsApp Ons Nu

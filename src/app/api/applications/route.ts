@@ -1,9 +1,7 @@
 export const dynamic = "force-dynamic";
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import dbConnect from "@/lib/db";
-import Application from "@/models/Application";
-import { authOptions } from "@/lib/auth";
+import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 export async function POST(request: Request) {
     try {
@@ -29,38 +27,51 @@ export async function POST(request: Request) {
             );
         }
 
-        await dbConnect();
+        const supabase = await createClient();
+        const supabaseAdmin = createAdminClient();
 
-        // Get session to link user if logged in
-        const session = await getServerSession(authOptions);
+        // Get session to link user if logged in (optional)
+        const { data: { user } } = await supabase.auth.getUser();
 
-        // Create application
-        const application = await Application.create({
-            firstName,
-            lastName,
-            email: email.toLowerCase(),
-            phone,
-            company: company || undefined,
-            storeName: storeName || undefined,
-            storeUrl: storeUrl || undefined,
-            productCount,
-            services: services || [],
-            message: message || undefined,
-            status: "pending",
-            userId: session?.user?.id || undefined,
-        });
+        // Create application using Admin Client to bypass RLS
+        const { data: application, error } = await supabaseAdmin
+            .from('applications')
+            .insert({
+                first_name: firstName,
+                last_name: lastName,
+                email: email.toLowerCase(),
+                phone,
+                company: company || null,
+                store_name: storeName || null,
+                store_url: storeUrl || null,
+                product_count: productCount,
+                services: services || [],
+                message: message || null,
+                status: "pending",
+                user_id: user?.id || null,
+            })
+            .select()
+            .single();
+
+        if (error) {
+            console.error("Supabase error:", error);
+            return NextResponse.json(
+                { error: error.message || "Fout bij het opslaan van aanvraag" },
+                { status: 500 }
+            );
+        }
 
         return NextResponse.json(
             {
                 message: "Aanvraag succesvol ingediend! We nemen binnen 1-2 werkdagen contact met je op.",
-                id: application._id.toString(),
+                id: data.id,
             },
             { status: 201 }
         );
-    } catch (error) {
+    } catch (error: any) {
         console.error("Application submission error:", error);
         return NextResponse.json(
-            { error: "Er is een fout opgetreden bij het indienen van je aanvraag" },
+            { error: error.message || "Er is een fout opgetreden bij het indienen van je aanvraag" },
             { status: 500 }
         );
     }
