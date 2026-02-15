@@ -29,7 +29,7 @@ import {
     Building2,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 import {
     Accordion,
     AccordionContent,
@@ -266,7 +266,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="Jouw voornaam"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.firstName}
-                                                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, firstName: e.target.value })}
                                                         required
                                                     />
                                                 </div>
@@ -280,7 +280,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="Jouw achternaam"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.lastName}
-                                                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, lastName: e.target.value })}
                                                         required
                                                     />
                                                 </div>
@@ -298,7 +298,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="jouw@email.nl"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.email}
-                                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, email: e.target.value })}
                                                         required
                                                     />
                                                 </div>
@@ -312,7 +312,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="06 12345678"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.phone}
-                                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, phone: e.target.value })}
                                                         required
                                                     />
                                                 </div>
@@ -329,7 +329,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="Jouw bedrijf"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.company}
-                                                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, company: e.target.value })}
                                                     />
                                                 </div>
                                             </div>
@@ -342,7 +342,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="Bijv. 100-500"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.productCount}
-                                                        onChange={(e) => setFormData({ ...formData, productCount: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, productCount: e.target.value })}
                                                     />
                                                 </div>
                                             </div>
@@ -358,7 +358,7 @@ export default function BolAanvraagformulierPage() {
                                                         placeholder="www.jouwwebshop.nl"
                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                         value={formData.storeUrl}
-                                                        onChange={(e) => setFormData({ ...formData, storeUrl: e.target.value })}
+                                                        onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, storeUrl: e.target.value })}
                                                     />
                                                 </div>
                                             </div>
@@ -372,13 +372,13 @@ export default function BolAanvraagformulierPage() {
                                                         key={service.id}
                                                         onClick={() => handleServiceToggle(service.id)}
                                                         className={`cursor-pointer border rounded-xl p-3 flex items-center gap-3 transition-all ${formData.services.includes(service.id)
-                                                                ? "bg-[#6366F1]/20 border-[#6366F1] text-[#F8FAFC]"
-                                                                : "bg-[#0F172A] border-[#1E293B] text-[#94A3B8] hover:border-[#6366F1]/50"
+                                                            ? "bg-[#6366F1]/20 border-[#6366F1] text-[#F8FAFC]"
+                                                            : "bg-[#0F172A] border-[#1E293B] text-[#94A3B8] hover:border-[#6366F1]/50"
                                                             }`}
                                                     >
                                                         <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-colors ${formData.services.includes(service.id)
-                                                                ? "bg-[#6366F1] border-[#6366F1]"
-                                                                : "border-[#334155]"
+                                                            ? "bg-[#6366F1] border-[#6366F1]"
+                                                            : "border-[#334155]"
                                                             }`}>
                                                             {formData.services.includes(service.id) && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
                                                         </div>
@@ -395,7 +395,7 @@ export default function BolAanvraagformulierPage() {
                                                 placeholder="Vertel ons meer over je doelen..."
                                                 className="min-h-[120px] bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                 value={formData.message}
-                                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                                onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setFormData({ ...formData, message: e.target.value })}
                                             />
                                         </div>
 
