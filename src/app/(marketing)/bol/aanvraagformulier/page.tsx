@@ -58,13 +58,16 @@ const benefits = [
 
 const faqs = [
     {
-    {
-        question: "What are the expected earnings?",
-        answer: "Conservative first-month estimates: 500 products → 30-40 orders/month, 1,000 products → 50-75 orders/month, 2,000 products → 80-110 orders/month, 3,000 products → 120-150 orders/month.",
+        question: "Wat gebeurt er na mijn aanvraag?",
+        answer: "We beoordelen je aanvraag en nemen binnen 24 uur contact op met een voorstel op maat of om een kennismakingsgesprek in te plannen.",
     },
     {
-        question: "How often are payouts processed?",
-        answer: "Bol.com offers two payout periods: every 14 days or once per month. Allegro provides multiple options including next-business-day payouts for faster cash flow.",
+        question: "Is het adviesgesprek gratis?",
+        answer: "Ja, het eerste adviesgesprek is volledig vrijblijvend en gratis. We bespreken je doelen en hoe wij kunnen helpen.",
+    },
+    {
+        question: "Kan ik meerdere diensten aanvragen?",
+        answer: "Zeker, selecteer gewoon de diensten waarin je geïnteresseerd bent in het formulier, en we zullen ze allemaal bespreken.",
     },
 ];
 
