@@ -286,16 +286,6 @@ export default function BolAanvraagformulierPage() {
                                                                         className="pl-9 bg-[#020617] border-[#1E293B] text-[#F8FAFC] focus:ring-[#6366F1]"
                                                                         value={formData.lastName}
                                                                         onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                                                </div>
-                                            ))}
-                                                            </div>
-                                                        </div>
-
-                                                        {/* Why Choose */}
-                                                        <div className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] p-6">
-                                                            <h3 className="text-lg font-bold text-[#F8FAFC] mb-4">Why Choose Us</h3>
-                                                            <div className="space-y-3">
-                                                                {[
                                                                     "100% Buy Box guarantee",
                                                                     "Scale up to €250K/month",
                                                                     "24/7 stock monitoring",
@@ -307,115 +297,115 @@ export default function BolAanvraagformulierPage() {
                                                                         {item}
                                                                     </div>
                                                                 ))}
+                                                                </div>
                                                             </div>
-                                                        </div>
 
-                                                        {/* Contact Info */}
-                                                        <div className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] p-6">
-                                                            <h3 className="text-lg font-bold text-[#F8FAFC] mb-4">Need Help?</h3>
-                                                            <p className="text-sm text-[#94A3B8] mb-4">
-                                                                Our team is here to help you get started. Reach out via WhatsApp or email.
-                                                            </p>
-                                                            <div className="space-y-2 text-sm">
-                                                                <div className="flex items-center gap-2 text-[#94A3B8]">
-                                                                    <Phone className="w-4 h-4 text-[#6366F1]" />
-                                                                    +31 85 401 2968
-                                                                </div>
-                                                                <div className="flex items-center gap-2 text-[#94A3B8]">
-                                                                    <Mail className="w-4 h-4 text-[#6366F1]" />
-                                                                    info@sellerconnect.nl
+                                                            {/* Contact Info */}
+                                                            <div className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] p-6">
+                                                                <h3 className="text-lg font-bold text-[#F8FAFC] mb-4">Need Help?</h3>
+                                                                <p className="text-sm text-[#94A3B8] mb-4">
+                                                                    Our team is here to help you get started. Reach out via WhatsApp or email.
+                                                                </p>
+                                                                <div className="space-y-2 text-sm">
+                                                                    <div className="flex items-center gap-2 text-[#94A3B8]">
+                                                                        <Phone className="w-4 h-4 text-[#6366F1]" />
+                                                                        +31 85 401 2968
+                                                                    </div>
+                                                                    <div className="flex items-center gap-2 text-[#94A3B8]">
+                                                                        <Mail className="w-4 h-4 text-[#6366F1]" />
+                                                                        info@sellerconnect.nl
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </motion.div>
+                                                    </motion.div>
+                                                </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
 
-                            {/* FAQ */}
-                            <section className="py-24 relative overflow-hidden">
-                                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#6366F1]/20 to-transparent" />
-                                <div className="container mx-auto px-4 relative z-10">
-                                    <div className="max-w-3xl mx-auto">
+                                {/* FAQ */}
+                                <section className="py-24 relative overflow-hidden">
+                                    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#6366F1]/20 to-transparent" />
+                                    <div className="container mx-auto px-4 relative z-10">
+                                        <div className="max-w-3xl mx-auto">
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 20 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                viewport={{ once: true }}
+                                                className="text-center mb-12"
+                                            >
+                                                <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
+                                                    <HelpCircle className="w-4 h-4" />
+                                                    FAQ
+                                                </div>
+                                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
+                                                    Frequently asked <span className="gradient-text">questions</span>
+                                                </h2>
+                                            </motion.div>
+
+                                            <Accordion type="single" collapsible className="w-full space-y-3">
+                                                {faqs.map((faq, index) => (
+                                                    <AccordionItem
+                                                        key={index}
+                                                        value={`item-${index}`}
+                                                        className="bg-[#0F172A]/50 backdrop-blur-sm rounded-xl border border-[#1E293B] px-6 data-[state=open]:border-[#6366F1]/30"
+                                                    >
+                                                        <AccordionTrigger className="text-left text-base font-medium text-[#F8FAFC] hover:text-[#6366F1] transition-colors py-5 [&[data-state=open]]:text-[#6366F1]">
+                                                            {faq.question}
+                                                        </AccordionTrigger>
+                                                        <AccordionContent className="text-[#94A3B8] text-sm leading-relaxed pb-5">
+                                                            {faq.answer}
+                                                        </AccordionContent>
+                                                    </AccordionItem>
+                                                ))}
+                                            </Accordion>
+
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 20 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                viewport={{ once: true }}
+                                                className="text-center mt-12"
+                                            >
+                                                <p className="text-[#64748B] mb-4">Still have questions?</p>
+                                                <Link href="/contact">
+                                                    <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
+                                                        <MessageCircle className="w-5 h-5 mr-2" />
+                                                        Contact us
+                                                    </Button>
+                                                </Link>
+                                            </motion.div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                {/* CTA */}
+                                <section className="py-24 relative overflow-hidden">
+                                    <div className="absolute inset-0 animated-grid opacity-30" />
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#6366F1]/10 rounded-full blur-[128px]" />
+                                    <div className="container mx-auto px-4 relative z-10 text-center">
                                         <motion.div
                                             initial={{ opacity: 0, y: 20 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
-                                            className="text-center mb-12"
                                         >
-                                            <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
-                                                <HelpCircle className="w-4 h-4" />
-                                                FAQ
-                                            </div>
-                                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                                Frequently asked <span className="gradient-text">questions</span>
+                                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
+                                                Start the all-in-one <span className="gradient-text">earning model</span>
                                             </h2>
-                                        </motion.div>
-
-                                        <Accordion type="single" collapsible className="w-full space-y-3">
-                                            {faqs.map((faq, index) => (
-                                                <AccordionItem
-                                                    key={index}
-                                                    value={`item-${index}`}
-                                                    className="bg-[#0F172A]/50 backdrop-blur-sm rounded-xl border border-[#1E293B] px-6 data-[state=open]:border-[#6366F1]/30"
-                                                >
-                                                    <AccordionTrigger className="text-left text-base font-medium text-[#F8FAFC] hover:text-[#6366F1] transition-colors py-5 [&[data-state=open]]:text-[#6366F1]">
-                                                        {faq.question}
-                                                    </AccordionTrigger>
-                                                    <AccordionContent className="text-[#94A3B8] text-sm leading-relaxed pb-5">
-                                                        {faq.answer}
-                                                    </AccordionContent>
-                                                </AccordionItem>
-                                            ))}
-                                        </Accordion>
-
-                                        <motion.div
-                                            initial={{ opacity: 0, y: 20 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true }}
-                                            className="text-center mt-12"
-                                        >
-                                            <p className="text-[#64748B] mb-4">Still have questions?</p>
-                                            <Link href="/contact">
-                                                <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
-                                                    <MessageCircle className="w-5 h-5 mr-2" />
-                                                    Contact us
-                                                </Button>
-                                            </Link>
+                                            <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
+                                                We manage the entire sales process for your store from A to Z.
+                                            </p>
+                                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                                <Link href="/contact">
+                                                    <Button size="lg" variant="outline" className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
+                                                        <MessageCircle className="w-5 h-5 mr-2" />
+                                                        Contact Us
+                                                    </Button>
+                                                </Link>
+                                            </div>
                                         </motion.div>
                                     </div>
-                                </div>
-                            </section>
-
-                            {/* CTA */}
-                            <section className="py-24 relative overflow-hidden">
-                                <div className="absolute inset-0 animated-grid opacity-30" />
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#6366F1]/10 rounded-full blur-[128px]" />
-                                <div className="container mx-auto px-4 relative z-10 text-center">
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                    >
-                                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                                            Start the all-in-one <span className="gradient-text">earning model</span>
-                                        </h2>
-                                        <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
-                                            We manage the entire sales process for your store from A to Z.
-                                        </p>
-                                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                            <Link href="/contact">
-                                                <Button size="lg" variant="outline" className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
-                                                    <MessageCircle className="w-5 h-5 mr-2" />
-                                                    Contact Us
-                                                </Button>
-                                            </Link>
-                                        </div>
-                                    </motion.div>
-                                </div>
-                            </section>
-                        </div>
-                        );
+                                </section>
+                            </div>
+                            );
 }
