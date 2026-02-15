@@ -17,7 +17,7 @@ export function BusinessGrowthAnimation() {
                     <div className="flex items-center justify-between">
                         <div>
                             <h3 className="font-bold text-base text-white">Analytics Dashboard</h3>
-                            <p className="text-white/70 text-sm">Real-time metrics</p>
+                            <p className="text-white/70 text-sm">Real-time cijfers</p>
                         </div>
                         <div className="flex gap-1.5">
                             <div className="w-3 h-3 rounded-full bg-white/20" />
@@ -37,7 +37,7 @@ export function BusinessGrowthAnimation() {
                             transition={{ delay: 0.3, duration: 0.4 }}
                             className="bg-[#020617] rounded-xl p-4 border border-[#1E293B]"
                         >
-                            <div className="text-[#22C55E] text-xs font-medium mb-1">Revenue</div>
+                            <div className="text-[#22C55E] text-xs font-medium mb-1">Omzet</div>
                             <div className="text-xl font-bold text-[#F8FAFC]">€24.5K</div>
                             <motion.div
                                 initial={{ width: 0 }}
@@ -60,7 +60,7 @@ export function BusinessGrowthAnimation() {
                             transition={{ delay: 0.4, duration: 0.4 }}
                             className="bg-[#020617] rounded-xl p-4 border border-[#1E293B]"
                         >
-                            <div className="text-[#6366F1] text-xs font-medium mb-1">Orders</div>
+                            <div className="text-[#6366F1] text-xs font-medium mb-1">Bestellingen</div>
                             <div className="text-xl font-bold text-[#F8FAFC]">1,847</div>
                             <motion.div
                                 initial={{ width: 0 }}
@@ -83,7 +83,7 @@ export function BusinessGrowthAnimation() {
                             transition={{ delay: 0.5, duration: 0.4 }}
                             className="bg-[#020617] rounded-xl p-4 border border-[#1E293B]"
                         >
-                            <div className="text-[#22D3EE] text-xs font-medium mb-1">Growth</div>
+                            <div className="text-[#22D3EE] text-xs font-medium mb-1">Groei</div>
                             <div className="text-xl font-bold text-[#F8FAFC]">+32%</div>
                             <motion.div
                                 initial={{ width: 0 }}
@@ -109,7 +109,7 @@ export function BusinessGrowthAnimation() {
                         className="bg-[#020617] rounded-xl p-4 border border-[#1E293B]"
                     >
                         <div className="flex items-center justify-between mb-4">
-                            <span className="text-sm font-medium text-[#F8FAFC]">Sales Performance</span>
+                            <span className="text-sm font-medium text-[#F8FAFC]">Verkoop Prestaties</span>
                             <span className="text-xs text-[#22C55E] font-medium bg-[#22C55E]/10 px-2 py-1 rounded-full">
                                 ↑ 24%
                             </span>
@@ -148,8 +148,8 @@ export function BusinessGrowthAnimation() {
                     >
                         {[
                             { name: "Product Listings", count: 2847, trend: "+12%" },
-                            { name: "Active Orders", count: 156, trend: "+8%" },
-                            { name: "Fulfilled Today", count: 89, trend: "+15%" },
+                            { name: "Actieve Bestellingen", count: 156, trend: "+8%" },
+                            { name: "Verzonden Vandaag", count: 89, trend: "+15%" },
                         ].map((item, i) => (
                             <motion.div
                                 key={i}
@@ -202,8 +202,8 @@ export function BusinessGrowthAnimation() {
                     </svg>
                 </motion.div>
                 <div>
-                    <div className="text-sm font-semibold text-[#F8FAFC]">Order Synced</div>
-                    <div className="text-xs text-[#22C55E]">99.2% success rate</div>
+                    <div className="text-sm font-semibold text-[#F8FAFC]">Bestelling Gesynchroniseerd</div>
+                    <div className="text-xs text-[#22C55E]">99.2% succespercentage</div>
                 </div>
             </motion.div>
 
@@ -221,8 +221,8 @@ export function BusinessGrowthAnimation() {
                         </svg>
                     </div>
                     <div>
-                        <div className="text-sm font-semibold text-[#F8FAFC]">Buy Box Won</div>
-                        <div className="text-xs text-[#6366F1]">+847 products</div>
+                        <div className="text-sm font-semibold text-[#F8FAFC]">Koopblok Gewonnen</div>
+                        <div className="text-xs text-[#6366F1]">+847 producten</div>
                     </div>
                 </div>
             </motion.div>

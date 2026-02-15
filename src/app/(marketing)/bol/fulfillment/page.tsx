@@ -32,22 +32,22 @@ const services = [
     {
         icon: RotateCcw,
         title: "Retour Service",
-        description: "Wij handelen al je retouren snel af voor snelle terugbetalingen van de leverancier. Geen gedoe meer met retourlogistiek.",
+        description: "Wij verwerken al je reteouren snel voor snelle terugbetalingen van leveranciers. Geen gedoe meer met retourlogistiek.",
     },
     {
         icon: Truck,
         title: "Fulfillment",
-        description: "Bespaar geld en tijd op al je zendingen met onze fulfillment service. Professionele verpakking en snelle verzending.",
+        description: "Bespaar tijd en geld op al je zendingen met onze fulfillment service. Professionele verpakking en snelle verzending.",
     },
     {
         icon: PackageOpen,
-        title: "Herverpakkings Service",
-        description: "Wij inspecteren alle producten en herverpakken alle zendingen in neutrale dozen en enveloppen voor een professionele uitstraling.",
+        title: "Ompakservice",
+        description: "Wij inspecteren alle producten en pakken alle zendingen om in neutrale dozen en enveloppen voor een professionele uitstraling.",
     },
     {
         icon: Warehouse,
         title: "Magazijn & Opslag",
-        description: "Veilige opslagruimte voor je inventaris met dagelijkse controle en professionele afhandeling.",
+        description: "Veilige opslagruimte voor je voorraad met dagelijkse controles en professionele afhandeling.",
     },
 ];
 
@@ -55,22 +55,22 @@ const whyChoose = [
     {
         icon: Heart,
         title: "Persoonlijk Contact",
-        description: "Wij hechten waarde aan persoonlijke en effectieve communicatie met onze klanten om het verzend- en retourproces samen te beheren.",
+        description: "Wij hechten waarde aan persoonlijk en effectief contact met onze klanten om samen het verzend- en retourproces te beheren.",
     },
     {
         icon: Leaf,
-        title: "Milieuvriendelijk",
-        description: "Wij gebruiken de meest effici\u00ebnte en milieuvriendelijke opties, verminderen CO2-uitstoot en houden afval uit stortplaatsen.",
+        title: "Milieubewust",
+        description: "Wij gebruiken de meest efficiënte en milieuvriendelijke opties, verminderen de CO2-uitstoot en houden afval buiten de stortplaats.",
     },
     {
         icon: Clock,
         title: "Snelle Levertijden",
-        description: "Wij werken met leveranciers die de volgende werkdag kunnen leveren, zodat alle bestellingen je klanten op tijd bereiken.",
+        description: "Wij werken met leveranciers die de volgende werkdag kunnen leveren, zodat alle bestellingen op tijd bij je klanten aankomen.",
     },
     {
         icon: Users,
         title: "Betrouwbare Partners",
-        description: "Verzend met DHL, PostNL, DPD, UPS en FedEx \u2014 kies de vervoerder die het beste bij jouw behoeften past.",
+        description: "Verzend met DHL, PostNL, DPD, UPS en FedEx — kies de vervoerder die het beste bij je behoeften past.",
     },
 ];
 
@@ -84,19 +84,19 @@ const packagingOptions = [
 const faqs = [
     {
         question: "Wat is inbegrepen in de fulfillment prijs?",
-        answer: "De prijs van €8.50 per eenheid (excl. BTW & porto) omvat verpakkingsmateriaal, plakband, vulmateriaal en een verzendsticker. Retouren worden afgehandeld voor €3 per eenheid (excl. BTW).",
+        answer: "De prijs van €8,50 per eenheid (excl. BTW & verzendkosten) is inclusief verpakkingsmateriaal, tape, opvulmateriaal en een verzendlabel. Retouren worden verwerkt voor €3 per eenheid (excl. BTW).",
     },
     {
         question: "Met welke vervoerders kan ik verzenden?",
-        answer: "Wij werken samen met DHL, DHL Express, PostNL, DPD, UPS en FedEx. Je kunt de vervoerder kiezen die het beste past bij jouw zending.",
+        answer: "Wij werken met DHL, DHL Express, PostNL, DPD, UPS en FedEx. Je kunt de vervoerder kiezen die het beste bij je zending past.",
     },
     {
         question: "Is magazijnopslag beschikbaar?",
-        answer: "Ja, magazijnopslag is beschikbaar. Neem contact op voor actuele prijzen en beschikbare ruimtes.",
+        answer: "Ja, magazijnopslag is beschikbaar. Neem contact met ons op voor actuele prijzen en beschikbare ruimtes.",
     },
     {
         question: "Hoe worden retouren afgehandeld?",
-        answer: "Wij verwerken alle retouren snel en efficiënt. De retourafhandelingskosten zijn €3 per eenheid (excl. BTW). Wij coördineren rechtstreeks met leveranciers voor snelle terugbetalingen.",
+        answer: "Wij verwerken alle retouren snel en efficiënt. De retourverwerkingskosten zijn €3 per eenheid (excl. BTW). Wij stemmen rechtstreeks af met leveranciers voor snelle terugbetalingen.",
     },
     {
         question: "Wat zijn de verwachte inkomsten in maand 1?",
@@ -131,14 +131,14 @@ export default function BolFulfillmentPage() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed mb-8 max-w-2xl mx-auto">
-                                Stuur je producten naar ons fulfillment centrum en wij handelen de verzending af.
-                                Zo heb jij meer tijd om je business te laten groeien.
+                                Stuur je producten naar ons fulfillment center en wij regelen de verzending.
+                                Zo heb jij meer tijd om je bedrijf te laten groeien.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link href="/bol/aanvraagformulier">
                                     <ShimmerButton className="shadow-2xl h-14 px-8 text-base font-medium rounded-xl">
-                                        Direct Starten
+                                        Start Nu
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </ShimmerButton>
                                 </Link>
@@ -155,7 +155,7 @@ export default function BolFulfillmentPage() {
 
                             {/* Service Badges */}
                             <div className="flex flex-wrap justify-center gap-6 mt-12">
-                                {["Fulfillment", "Return Service", "Repackaging", "Warehouse & Storage"].map((badge, i) => (
+                                {["Fulfillment", "Retour Service", "Ompakservice", "Magazijn & Opslag"].map((badge, i) => (
                                     <motion.div
                                         key={badge}
                                         initial={{ opacity: 0, y: 10 }}
@@ -183,7 +183,7 @@ export default function BolFulfillmentPage() {
                         viewport={{ once: true }}
                         className="text-center mb-10"
                     >
-                        <p className="text-sm text-[#64748B] uppercase tracking-wider font-medium">Shipping Partners</p>
+                        <p className="text-sm text-[#64748B] uppercase tracking-wider font-medium">Verzendpartners</p>
                     </motion.div>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                         {["DHL", "DHL Express", "PostNL", "DPD", "UPS", "FedEx"].map((partner, i) => (
@@ -213,13 +213,13 @@ export default function BolFulfillmentPage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                             <Zap className="w-4 h-4" />
-                            Discover All Options
+                            Ontdek Alle Opties
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
                             Complete fulfillment <span className="gradient-text">services</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Send your products to us and we handle everything from shipping to returns
+                            Stuur je producten naar ons en wij regelen alles van verzending tot retouren
                         </p>
                     </motion.div>
 
@@ -257,10 +257,10 @@ export default function BolFulfillmentPage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Less work, <span className="gradient-text">more profit</span>
+                            Minder werk, <span className="gradient-text">meer winst</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            We manage the entire shipping process, reducing your workload while ensuring on-time delivery
+                            Wij beheren het volledige verzendproces, verminderen je werkdruk en zorgen voor tijdige levering
                         </p>
                     </motion.div>
 
@@ -297,10 +297,10 @@ export default function BolFulfillmentPage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Fulfillment <span className="gradient-text">pricing</span>
+                            Fulfillment <span className="gradient-text">tarieven</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            100% on-time delivery with professional packaging
+                            100% tijdige levering met professionele verpakking inbegrepen
                         </p>
                     </motion.div>
 
@@ -315,20 +315,20 @@ export default function BolFulfillmentPage() {
                             <div className="p-6 border-b border-[#1E293B]">
                                 <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Fulfillment</h3>
                                 <div className="mt-3">
-                                    <span className="text-4xl font-bold text-[#F8FAFC]">€7.19</span>
-                                    <span className="text-[#64748B] text-sm">/unit (excl. VAT)</span>
+                                    <span className="text-4xl font-bold text-[#F8FAFC]">€7,19</span>
+                                    <span className="text-[#64748B] text-sm">/eenheid (excl. BTW)</span>
                                 </div>
-                                <p className="text-xs text-[#64748B] mt-1">Shipping label not included</p>
+                                <p className="text-xs text-[#64748B] mt-1">Verzendlabel niet inbegrepen</p>
                             </div>
                             <div className="p-6 space-y-3">
-                                {["Packaging materials", "Packing tape", "Filling material", "Shipping sticker", "Returns: €3.49/unit"].map((item) => (
+                                {["Verpakkingsmateriaal", "Verpakkingstape", "Opvulmateriaal", "Verzendsticker", "Retouren: €3,49/eenheid"].map((item) => (
                                     <div key={item} className="flex items-center gap-3 text-sm text-[#94A3B8]">
                                         <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                                         {item}
                                     </div>
                                 ))}
                                 <div className="pt-4">
-                                    <p className="text-sm font-medium text-[#F8FAFC] mb-3">Free packaging materials:</p>
+                                    <p className="text-sm font-medium text-[#F8FAFC] mb-3">Gratis verpakkingsmateriaal:</p>
                                     <div className="grid grid-cols-2 gap-2">
                                         {packagingOptions.map((opt) => (
                                             <div key={opt.name} className="flex items-center gap-2 py-2 px-3 bg-[#020617]/50 rounded-lg border border-[#1E293B]">
@@ -350,15 +350,15 @@ export default function BolFulfillmentPage() {
                             className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] overflow-hidden"
                         >
                             <div className="p-6 border-b border-[#1E293B]">
-                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Warehouse & Storage</h3>
+                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Magazijn & Opslag</h3>
                                 <div className="mt-3">
-                                    <span className="text-4xl font-bold text-[#F8FAFC]">€2.89</span>
-                                    <span className="text-[#64748B] text-sm">/m² daily (excl. VAT)</span>
+                                    <span className="text-4xl font-bold text-[#F8FAFC]">€2,89</span>
+                                    <span className="text-[#64748B] text-sm">/m² dagelijks (excl. BTW)</span>
                                 </div>
                             </div>
                             <div className="p-6 space-y-3">
                                 {[
-                                    { size: "1.5 m²", available: true },
+                                    { size: "1,5 m²", available: true },
                                     { size: "3 m²", available: true },
                                     { size: "4 m²", available: true },
                                     { size: "6 m²", available: false },
@@ -372,7 +372,7 @@ export default function BolFulfillmentPage() {
                                             <span className="text-sm text-[#94A3B8]">{space.size}</span>
                                         </div>
                                         <span className={`text-xs font-medium px-2 py-1 rounded-full ${space.available ? 'bg-[#22C55E]/10 text-[#22C55E]' : 'bg-[#EF4444]/10 text-[#EF4444]'}`}>
-                                            {space.available ? "Available" : "Unavailable"}
+                                            {space.available ? "Beschikbaar" : "Niet Beschikbaar"}
                                         </span>
                                     </div>
                                 ))}
@@ -398,7 +398,7 @@ export default function BolFulfillmentPage() {
                                 FAQ
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                Frequently asked <span className="gradient-text">questions</span>
+                                Veelgestelde <span className="gradient-text">vragen</span>
                             </h2>
                         </motion.div>
 
@@ -425,11 +425,11 @@ export default function BolFulfillmentPage() {
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
-                            <p className="text-[#64748B] mb-4">Still have questions?</p>
+                            <p className="text-[#64748B] mb-4">Nog vragen?</p>
                             <Link href="/contact">
                                 <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
                                     <MessageCircle className="w-5 h-5 mr-2" />
-                                    Contact us
+                                    Neem contact op
                                 </Button>
                             </Link>
                         </motion.div>
@@ -448,10 +448,10 @@ export default function BolFulfillmentPage() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                            Start with the all-in-one <span className="gradient-text">earning model</span>
+                            Start met het alles-in-één <span className="gradient-text">verdienmodel</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
-                            We manage the entire sales process for your store from A to Z.
+                            Wij beheren het volledige verkoopproces voor je winkel van A tot Z.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/bol/aanvraagformulier">
@@ -459,7 +459,7 @@ export default function BolFulfillmentPage() {
                                     size="lg"
                                     className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25"
                                 >
-                                    Get Started
+                                    Starten
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
@@ -469,7 +469,7 @@ export default function BolFulfillmentPage() {
                                     variant="outline"
                                     className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50"
                                 >
-                                    Contact Us
+                                    Contact Ons
                                 </Button>
                             </Link>
                         </div>

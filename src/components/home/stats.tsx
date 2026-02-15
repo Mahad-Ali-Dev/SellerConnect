@@ -69,10 +69,10 @@ function StatItem({ icon, value, suffix, label, delay }: StatItemProps) {
 
 export function Stats() {
     const stats = [
-        { icon: <Package className="w-6 h-6" />, value: 50000, suffix: "+", label: "Products Synced" },
-        { icon: <Users className="w-6 h-6" />, value: 500, suffix: "+", label: "Active Sellers" },
-        { icon: <Award className="w-6 h-6" />, value: 99, suffix: "%", label: "Success Rate" },
-        { icon: <Clock className="w-6 h-6" />, value: 24, suffix: "/7", label: "Support" },
+        { icon: <Package className="w-6 h-6" />, value: 50000, suffix: "+", label: "Producten Gesynchroniseerd" },
+        { icon: <Users className="w-6 h-6" />, value: 500, suffix: "+", label: "Actieve Verkopers" },
+        { icon: <Award className="w-6 h-6" />, value: 99, suffix: "%", label: "Succespercentage" },
+        { icon: <Clock className="w-6 h-6" />, value: 24, suffix: "/7", label: "Ondersteuning" },
     ];
 
     return (

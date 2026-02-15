@@ -22,19 +22,19 @@ const faqs = [
     },
     {
         question: "Hoe snel worden producten toegevoegd?",
-        answer: "Na goedkeuring beginnen we direct. Afhankelijk van de hoeveelheid kan dit 24-48 uur duren. Voor grotere aantallen (5000+) maken we samen een schema.",
+        answer: "Zodra je account is gekoppeld, begint ons systeem direct met het analyseren en toevoegen van producten. De meeste winkels zijn binnen 24 uur volledig operationeel.",
     },
     {
-        question: "Werkt voorraadbeheer voor meerdere kanalen?",
-        answer: "Ja, onze voorraadbeheer software kan worden verbonden met meerdere kanalen zoals Bol.com, Amazon en je eigen webshop. Alle voorraad wordt in real-time gesynchroniseerd.",
+        question: "Wat als ik hulp nodig heb?",
+        answer: "We bieden 24/7 ondersteuning via chat en email. Voor Enterprise klanten is er een toegewijde accountmanager beschikbaar.",
     },
     {
-        question: "Wat gebeurt er als een product niet meer op voorraad is?",
-        answer: "Onze software detecteert dit automatisch en kan het product tijdelijk deactiveren. Zodra het weer op voorraad is, wordt het automatisch opnieuw geactiveerd.",
+        question: "Zijn er verborgen kosten?",
+        answer: "Nee, we zijn volledig transparant over onze prijzen. Je betaalt alleen het maandelijkse abonnementsbedrag. Er zijn geen setup-kosten of onverwachte toeslagen.",
     },
     {
-        question: "Hoeveel kost het om te beginnen?",
-        answer: "Je kunt starten met een gratis 14-dagen proefperiode. Daarna beginnen onze plannen vanaf €99/maand voor het Starter plan.",
+        question: "Werkt de automatische prijsaanpassing voor alle producten?",
+        answer: "Ja, onze repricer werkt voor alle producten in je inventory en past prijzen real-time aan op basis van concurrentie en jouw ingestelde marges.",
     },
 ];
 
@@ -59,11 +59,10 @@ export function FAQ() {
                             FAQ
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Veelgestelde{" "}
-                            <span className="gradient-text">vragen</span>
+                            Veelgestelde <span className="gradient-text">Vragen</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Vind antwoorden op veelgestelde vragen over onze services
+                            Alles wat je moet weten over SellerConnect
                         </p>
                     </motion.div>
 
@@ -100,7 +99,7 @@ export function FAQ() {
                         className="text-center mt-12"
                     >
                         <p className="text-[#64748B] mb-4">
-                            Nog vragen?
+                            Staat je vraag er niet tussen?
                         </p>
                         <Link href="/contact">
                             <Button

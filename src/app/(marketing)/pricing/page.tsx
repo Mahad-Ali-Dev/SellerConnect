@@ -35,9 +35,9 @@ const softwarePlans = [
         icon: Zap,
         popular: false,
         features: [
-            "Customer service ",
-            "Order Management",
-            "Cost per Employee 150 to 180",
+            "Klantenservice",
+            "Orderbeheer",
+            "Kosten per Werknemer 150 tot 180",
         ],
     },
     {
@@ -48,9 +48,9 @@ const softwarePlans = [
         icon: Crown,
         popular: true,
         features: [
-            "Product support ",
-            "Account Management",
-            "Order tracking ",
+            "Productondersteuning",
+            "Accountmanagement",
+            "Order tracking",
         ],
     },
     {
@@ -61,9 +61,9 @@ const softwarePlans = [
         icon: Rocket,
         popular: false,
         features: [
-            "Dedicated Account Management ",
-            "Reporting",
-            "Strategic Support"
+            "Persoonlijk Accountmanagement",
+            "Rapportage",
+            "Strategisch Advies"
         ],
     },
 ];

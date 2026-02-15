@@ -21,43 +21,43 @@ interface Plan {
 const plans: Plan[] = [
     {
         name: "Starter",
-        description: "Perfect for beginners",
+        description: "Perfect voor beginners",
         monthlyPrice: "199",
         yearlyPrice: "169",
         icon: Zap,
         popular: false,
         features: [
-            "Customer service ",
-            "Order Management",
-            "Cost per Employee 150 to 180",
+            "Klantenservice ",
+            "Orderbeheer",
+            "Kosten per werknemer 150 tot 180",
         ],
         ctaLink: "/contact",
     },
     {
         name: "Premium",
-        description: "For growing businesses",
+        description: "Voor groeiende bedrijven",
         monthlyPrice: "299",
         yearlyPrice: "249",
         icon: Crown,
         popular: true,
         features: [
-            "Product support ",
-            "Account Management",
+            "Productondersteuning ",
+            "Accountbeheer",
             "Order tracking ",
         ],
         ctaLink: "/contact",
     },
     {
         name: "Enterprise",
-        description: "For large organizations",
+        description: "Voor grote organisaties",
         monthlyPrice: "400+",
-        yearlyPrice: "Custom",
+        yearlyPrice: "Op maat",
         icon: Rocket,
         popular: false,
         features: [
-            "Dedicated Account Management ",
-            "Reporting",
-            "Strategic Support"
+            "Eigen Accountmanager ",
+            "Rapportage",
+            "Strategische Ondersteuning"
         ]
     },
 ];
@@ -82,14 +82,14 @@ export function PricingSection() {
                 >
                     <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                         <Sparkles className="w-4 h-4" />
-                        Pricing Options
+                        Prijzen
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                        Simple,{" "}
-                        <span className="gradient-text">transparent</span> pricing
+                        Eenvoudige,{" "}
+                        <span className="gradient-text">transparante</span> prijzen
                     </h2>
                     <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                        Choose the subscription plan that suits your needs. No hidden fees.
+                        Kies het abonnement dat bij je past. Geen verborgen kosten.
                     </p>
                 </motion.div>
 
@@ -101,7 +101,7 @@ export function PricingSection() {
                     className="flex items-center justify-center gap-4 mb-12"
                 >
                     <span className={`text-sm font-medium transition-colors ${!isYearly ? 'text-[#F8FAFC]' : 'text-[#64748B]'}`}>
-                        Monthly
+                        Maandelijks
                     </span>
                     <button
                         onClick={() => setIsYearly(!isYearly)}
@@ -114,7 +114,7 @@ export function PricingSection() {
                         />
                     </button>
                     <span className={`text-sm font-medium transition-colors ${isYearly ? 'text-[#F8FAFC]' : 'text-[#64748B]'}`}>
-                        Yearly
+                        Jaarlijks
                     </span>
                     {isYearly && (
                         <motion.span
@@ -122,7 +122,7 @@ export function PricingSection() {
                             animate={{ opacity: 1, scale: 1 }}
                             className="bg-[#22C55E] text-white text-xs font-medium px-2 py-1 rounded-full"
                         >
-                            Save 20%
+                            Bespaar 20%
                         </motion.span>
                     )}
                 </motion.div>
@@ -142,7 +142,7 @@ export function PricingSection() {
                             {plan.popular && (
                                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                                     <div className="bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white px-4 py-1 rounded-full text-xs font-medium shadow-lg shadow-[#6366F1]/30">
-                                        Most Popular
+                                        Meest Gekozen
                                     </div>
                                 </div>
                             )}
@@ -170,7 +170,7 @@ export function PricingSection() {
                                         {isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                                     </span>
                                     {plan.monthlyPrice !== "Custom" && (
-                                        <span className="text-[#64748B]">/month</span>
+                                        <span className="text-[#64748B]">/maand</span>
                                     )}
                                 </div>
 
@@ -197,7 +197,7 @@ export function PricingSection() {
                                             : 'bg-transparent border border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50 hover:border-[#6366F1]/30'
                                             }`}
                                     >
-                                        {plan.cta || (plan.monthlyPrice === "Custom" ? "Contact Sales" : "Start Free Trial")}
+                                        {plan.cta || (plan.monthlyPrice === "Custom" ? "Neem Contact Op" : "Start Gratis Proefperiode")}
                                         <ArrowRight className="w-4 h-4 ml-2" />
                                     </Button>
                                 </Link>
@@ -214,9 +214,9 @@ export function PricingSection() {
                     className="text-center mt-12"
                 >
                     <p className="text-[#64748B]">
-                        All prices exclude VAT.{" "}
+                        Alle prijzen zijn exclusief BTW.{" "}
                         <Link href="/pricing" className="text-[#6366F1] hover:underline font-medium">
-                            View full comparison
+                            Bekijk volledige vergelijking
                         </Link>
                     </p>
                 </motion.div>

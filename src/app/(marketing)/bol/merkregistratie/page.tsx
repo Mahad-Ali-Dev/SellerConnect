@@ -27,34 +27,34 @@ import {
 } from "@/components/ui/accordion";
 
 const includedServices = [
-    { icon: Barcode, text: "GS1 Registered EAN codes" },
-    { icon: Barcode, text: "GS1 EAN Purchase & Management" },
-    { icon: Zap, text: "GS1 EAN Activation" },
-    { icon: FileCheck, text: "GS1 EAN Coupling" },
-    { icon: Stamp, text: "Custom Logo & Stamp design" },
-    { icon: Stamp, text: "Custom Logo Printing" },
-    { icon: FileCheck, text: "SME Fund Submission (75% refund)" },
-    { icon: ShoppingBag, text: "Buy Box enforcement" },
+    { icon: Barcode, text: "GS1 Geregistreerde EAN codes" },
+    { icon: Barcode, text: "GS1 EAN Aankoop & Beheer" },
+    { icon: Zap, text: "GS1 EAN Activatie" },
+    { icon: FileCheck, text: "GS1 EAN Koppeling" },
+    { icon: Stamp, text: "Op maat Logo & Stempel ontwerp" },
+    { icon: Stamp, text: "Op maat Logo printen" },
+    { icon: FileCheck, text: "MKB Fonds Aanvraag (75% teruggave)" },
+    { icon: ShoppingBag, text: "Koopblok handhaving" },
 ];
 
 const packages = [
     {
         name: "Small",
-        classes: "1 Class",
+        classes: "1 Klasse",
         eans: "1,000",
         price: "1,499",
         popular: false,
     },
     {
         name: "Medium",
-        classes: "2 Classes",
+        classes: "2 Klassen",
         eans: "10,000",
         price: "2,249",
         popular: true,
     },
     {
         name: "Premium",
-        classes: "All Classes",
+        classes: "Alle Klassen",
         eans: "100,000",
         price: "4,999",
         popular: false,
@@ -64,50 +64,50 @@ const packages = [
 const benefits = [
     {
         icon: TrendingUp,
-        title: "Increase Revenue",
-        description: "Registered brands on marketplaces can proportionally expand their Buy Box products, leading to higher sales.",
+        title: "Verhoog Omzet",
+        description: "Geregistreerde merken op marketplaces kunnen hun koopblok producten uitbreiden, wat leidt tot hogere verkopen.",
     },
     {
         icon: Shield,
-        title: "Brand Protection",
-        description: "Your trademark is registered through BOIP (Benelux Office for Intellectual Property) and valid for 10 years.",
+        title: "Merkbescherming",
+        description: "Je merk wordt geregistreerd via BOIP (Benelux Bureau voor de Intellectuele Eigendom) en is 10 jaar geldig.",
     },
     {
         icon: Globe,
-        title: "Benelux Coverage",
-        description: "Full trademark protection across the Netherlands, Belgium, and Luxembourg with a single registration.",
+        title: "Benelux Dekking",
+        description: "Volledige merkbescherming in Nederland, België en Luxemburg met één registratie.",
     },
     {
         icon: Lock,
-        title: "Exclusive Rights",
-        description: "Prevent others from using your brand name or logo. Enforce your rights on marketplaces and beyond.",
+        title: "Exclusieve Rechten",
+        description: "Voorkom dat anderen je merknaam of logo gebruiken. Handhaaf je rechten op marketplaces en daarbuiten.",
     },
 ];
 
 const faqs = [
     {
-        question: "What is BOIP brand registration?",
-        answer: "BOIP (Benelux Office for Intellectual Property) handles trademark registration in the Benelux region. A registered trademark gives you exclusive rights to your brand name and logo for 10 years.",
+        question: "Wat is BOIP merkregistratie?",
+        answer: "BOIP (Benelux Bureau voor de Intellectuele Eigendom) is verantwoordelijk voor merkregistratie in de Benelux. Een geregistreerd merk geeft je 10 jaar lang exclusieve rechten op je merknaam en logo.",
     },
     {
-        question: "What is the SME Fund refund?",
-        answer: "The SME Fund offers a 75% refund on trademark registration costs for small and medium-sized enterprises. We handle the submission process for you as part of every package.",
+        question: "Wat is de MKB Fonds teruggave?",
+        answer: "Het MKB Fonds biedt 75% teruggave op merkregistratiekosten voor kleine en middelgrote ondernemingen. Wij verzorgen de aanvraag voor je als onderdeel van elk pakket.",
     },
     {
-        question: "How do EAN codes help my business?",
-        answer: "GS1 EAN codes are required for listing products under your own brand on marketplaces like Bol.com. They uniquely identify your products and are essential for Buy Box placement with your own brand.",
+        question: "Hoe helpen EAN codes mijn bedrijf?",
+        answer: "GS1 EAN codes zijn vereist om producten onder je eigen merk aan te bieden op marketplaces zoals Bol.com. Ze identificeren je producten uniek en zijn essentieel voor koopblok positie met je eigen merk.",
     },
     {
-        question: "What are trademark classes?",
-        answer: "Trademark classes define the categories of goods or services your brand covers. The Small package covers 1 class, Medium covers 2 classes, and Premium covers all classes for maximum protection.",
+        question: "Wat zijn merkklassen?",
+        answer: "Merkklassen definiëren de categorieën van goederen of diensten die je merk dekt. Het Small pakket dekt 1 klasse, Medium dekt 2 klassen en Premium dekt alle klassen voor maximale bescherming.",
     },
     {
-        question: "How long does registration take?",
-        answer: "The trademark registration process typically takes a few months. Once submitted, you receive interim protection while the registration is being processed by BOIP.",
+        question: "Hoe lang duurt de registratie?",
+        answer: "Het merkregistratieproces duurt doorgaans enkele maanden. Na indiening geniet je voorlopige bescherming terwijl de registratie door BOIP wordt verwerkt.",
     },
     {
-        question: "Can I use this on Bol.com immediately?",
-        answer: "Yes, once your brand is registered and EAN codes are activated, you can start listing products under your own brand on Bol.com and other marketplaces.",
+        question: "Kan ik dit direct op Bol.com gebruiken?",
+        answer: "Ja, zodra je merk is geregistreerd en EAN codes zijn geactiveerd, kun je beginnen met het aanbieden van producten onder je eigen merk op Bol.com en andere marketplaces.",
     },
 ];
 
@@ -129,17 +129,17 @@ export default function BolMerkregistratiePage() {
                         >
                             <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-6">
                                 <Shield className="w-4 h-4" />
-                                Brand Registration
+                                Merkregistratie
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F8FAFC] leading-[1.1] mb-6">
-                                Grow Your Business with{" "}
-                                <span className="gradient-text">Brand Protection</span>
+                                Laat je bedrijf groeien met{" "}
+                                <span className="gradient-text">Merkbescherming</span>
                             </h1>
 
                             <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed mb-8 max-w-2xl mx-auto">
-                                Register your trademark through BOIP and protect your brand across the Benelux region.
-                                Valid for 10 years with full EAN code management included.
+                                Registreer je merk via BOIP en bescherm je merk in de Benelux.
+                                10 jaar geldig inclusief volledig EAN code beheer.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -148,7 +148,7 @@ export default function BolMerkregistratiePage() {
                                         size="lg"
                                         className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 transition-all text-white shadow-lg shadow-[#6366F1]/25 shimmer"
                                     >
-                                        View Packages
+                                        Bekijk Pakketten
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
                                 </Link>
@@ -158,13 +158,13 @@ export default function BolMerkregistratiePage() {
                                         variant="outline"
                                         className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50 hover:border-[#475569]"
                                     >
-                                        Get Started
+                                        Start Nu
                                     </Button>
                                 </Link>
                             </div>
 
                             <div className="flex flex-wrap justify-center gap-6 mt-12">
-                                {["BOIP Certified", "10 Year Protection", "SME Fund Eligible"].map((badge, i) => (
+                                {["BOIP Gecertificeerd", "10 Jaar Bescherming", "Geschikt voor MKB Fonds"].map((badge, i) => (
                                     <motion.div
                                         key={badge}
                                         initial={{ opacity: 0, y: 10 }}
@@ -194,13 +194,13 @@ export default function BolMerkregistratiePage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                             <Award className="w-4 h-4" />
-                            All-Inclusive
+                            Alles-in-één
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Everything <span className="gradient-text">included</span>
+                            Alles <span className="gradient-text">inbegrepen</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Every package comes with a comprehensive set of BOIP registration services
+                            Elk pakket bevat een uitgebreide set BOIP registratiediensten
                         </p>
                     </motion.div>
 
@@ -235,10 +235,10 @@ export default function BolMerkregistratiePage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Increase your <span className="gradient-text">revenue</span>
+                            Verhoog je <span className="gradient-text">omzet</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            A registered brand on marketplaces allows you to expand your Buy Box products and boost sales
+                            Een geregistreerd merk op marketplaces stelt je in staat om je koopblok producten uit te breiden en de verkoop te stimuleren
                         </p>
                     </motion.div>
 
@@ -276,10 +276,10 @@ export default function BolMerkregistratiePage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Choose your <span className="gradient-text">package</span>
+                            Kies je <span className="gradient-text">pakket</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Each package includes all BOIP registration services listed above
+                            Elk pakket bevat alle hierboven genoemde BOIP registratiediensten
                         </p>
                     </motion.div>
 
@@ -295,12 +295,12 @@ export default function BolMerkregistratiePage() {
                                 <div className={`h-full rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1 relative ${pkg.popular ? 'bg-[#6366F1]/5 border-[#6366F1]/40' : 'bg-[#0F172A]/50 border-[#1E293B] hover:border-[#6366F1]/30'}`}>
                                     {pkg.popular && (
                                         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white text-xs font-medium px-3 py-1 rounded-full">
-                                            Most Popular
+                                            Meest Gekozen
                                         </div>
                                     )}
                                     <h3 className="text-2xl font-bold text-[#F8FAFC] mb-2">{pkg.name}</h3>
-                                    <p className="text-sm text-[#6366F1] font-medium mb-1">{pkg.classes} Trademark Registration</p>
-                                    <p className="text-sm text-[#64748B] mb-6">Includes {pkg.eans} EAN codes</p>
+                                    <p className="text-sm text-[#6366F1] font-medium mb-1">{pkg.classes} Merkregistratie</p>
+                                    <p className="text-sm text-[#64748B] mb-6">Inclusief {pkg.eans} EAN codes</p>
                                     <div className="mb-8">
                                         <span className="text-5xl font-bold text-[#F8FAFC]">€{pkg.price}</span>
                                     </div>
@@ -313,12 +313,12 @@ export default function BolMerkregistratiePage() {
                                         ))}
                                         <li className="flex items-center gap-2 text-sm text-[#6366F1]">
                                             <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
-                                            + all included services
+                                            + alle inbegrepen diensten
                                         </li>
                                     </ul>
                                     <Link href="/bol/aanvraagformulier">
                                         <Button className={`w-full h-12 rounded-xl text-sm font-medium ${pkg.popular ? 'bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white shadow-lg shadow-[#6366F1]/25' : 'bg-[#1E293B] text-[#F8FAFC] hover:bg-[#334155]'}`}>
-                                            Get Started
+                                            Start Nu
                                         </Button>
                                     </Link>
                                 </div>
@@ -344,7 +344,7 @@ export default function BolMerkregistratiePage() {
                                 FAQ
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                Frequently asked <span className="gradient-text">questions</span>
+                                Veelgestelde <span className="gradient-text">vragen</span>
                             </h2>
                         </motion.div>
 
@@ -371,11 +371,11 @@ export default function BolMerkregistratiePage() {
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
-                            <p className="text-[#64748B] mb-4">Still have questions?</p>
+                            <p className="text-[#64748B] mb-4">Nog vragen?</p>
                             <Link href="/contact">
                                 <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
                                     <MessageCircle className="w-5 h-5 mr-2" />
-                                    Contact us
+                                    Neem Contact Op
                                 </Button>
                             </Link>
                         </motion.div>
@@ -394,20 +394,20 @@ export default function BolMerkregistratiePage() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                            Protect your brand <span className="gradient-text">today</span>
+                            Bescherm je merk <span className="gradient-text">vandaag nog</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
-                            Get your trademark registered and start selling under your own brand on Bol.com.
+                            Laat je merk registreren en begin met verkopen onder je eigen merk op Bol.com.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/bol/aanvraagformulier">
                                 <Button size="lg" className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25">
-                                    Get Started <ArrowRight className="w-5 h-5 ml-2" />
+                                    Start Nu <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
                             <Link href="/contact">
                                 <Button size="lg" variant="outline" className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
-                                    Contact Us
+                                    Neem Contact Op
                                 </Button>
                             </Link>
                         </div>

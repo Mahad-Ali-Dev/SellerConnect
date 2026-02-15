@@ -10,12 +10,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSession, signOut } from "next-auth/react";
 
 const bolSubItems = [
-    { name: "Producten Toevoegen", href: "/bol/producten-toevoegen", icon: Package, desc: "Add products to your Bol.com store" },
-    { name: "Voorraad Beheer", href: "/bol/voorraad-beheer", icon: BarChart3, desc: "Stock control twice daily" },
-    { name: "Fulfillment", href: "/bol/fulfillment", icon: Truck, desc: "Shipping & returns service" },
+    { name: "Producten Toevoegen", href: "/bol/producten-toevoegen", icon: Package, desc: "Voeg producten toe aan je Bol.com winkel" },
+    { name: "Voorraad Beheer", href: "/bol/voorraad-beheer", icon: BarChart3, desc: "Voorraadcontrole twee keer per dag" },
+    { name: "Fulfillment", href: "/bol/fulfillment", icon: Truck, desc: "Verzend & retour service" },
     { name: "Prijzen", href: "/pricing", icon: CreditCard, desc: "Bekijk alle prijzen" },
-    { name: "Merkregistratie", href: "/bol/merkregistratie", icon: Shield, desc: "BOIP brand registration" },
-    { name: "Aanvraagformulier", href: "/bol/aanvraagformulier", icon: FileText, desc: "Apply to get started" },
+    { name: "Merkregistratie", href: "/bol/merkregistratie", icon: Shield, desc: "BOIP merkregistratie" },
+    { name: "Aanvraagformulier", href: "/bol/aanvraagformulier", icon: FileText, desc: "Vraag aan om te starten" },
 ];
 
 const navItems = [

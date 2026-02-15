@@ -27,8 +27,8 @@ const supportOptions = [
     {
         icon: MessageCircle,
         title: "WhatsApp Support",
-        description: "Snelle ondersteuning via WhatsApp. Gemiddelde reactietijd: 2 uur.",
-        link: "https://wa.me/+31854012968?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag",
+        description: "Snel antwoord via WhatsApp. Gemiddelde reactietijd: 2 uur.",
+        link: "https://wa.me/+31854012968?text=Hallo%20SellerConnect",
         buttonText: "Start Chat",
         color: "#25D366",
     },
@@ -42,7 +42,7 @@ const supportOptions = [
     },
     {
         icon: Phone,
-        title: "Contact Formulier",
+        title: "Contactformulier",
         description: "Vul het contactformulier in en wij nemen contact met je op.",
         link: "/contact",
         buttonText: "Naar Formulier",
@@ -53,7 +53,7 @@ const supportOptions = [
 const helpCategories = [
     {
         icon: BookOpen,
-        title: "Aan de Slag",
+        title: "Aan de slag",
         description: "Leer hoe je je eerste winkel opzet en producten toevoegt.",
     },
     {
@@ -63,23 +63,23 @@ const helpCategories = [
     },
     {
         icon: Video,
-        title: "Tutorials",
-        description: "Video handleidingen en stap-voor-stap guides.",
+        title: "Handleidingen",
+        description: "Video handleidingen en stap-voor-stap gidsen.",
     },
 ];
 
 const faqs = [
     {
-        question: "Hoe maak ik een nieuw Bol.com verkopersaccount aan?",
-        answer: "Ga naar partner.bol.com/sdd/account/creation en volg de stappen om een nieuw verkopersaccount aan te maken. Dit kost ongeveer 10 minuten. Binnen 3-5 werkdagen ontvang je je activatiecode per e-mail.",
+        question: "Hoe maak ik een nieuw Bol.com verkoopaccount aan?",
+        answer: "Ga naar partner.bol.com/sdd/account/creation en volg de stappen om een nieuw verkoopaccount aan te maken. Dit duurt ongeveer 10 minuten. Binnen 3-5 werkdagen ontvang je je activatiecode per e-mail.",
     },
     {
         question: "Ik wil de inloggegevens van mijn winkel niet delen. Kan ik dan alsnog diensten afnemen?",
-        answer: "Absoluut! We raden alle verkopers aan om een nieuw Bol.com account aan te maken via het partner portaal. Je hoeft nooit je inloggegevens met ons te delen - we gebruiken uitsluitend veilige API-tokens die je zelf aanmaakt in het Bol.com verkoopplatform.",
+        answer: "Absoluut! Wij adviseren alle verkopers om een nieuw Bol.com account aan te maken via het partner portaal. Je hoeft nooit je inloggegevens met ons te delen - we gebruiken uitsluitend veilige API-tokens die je zelf aanmaakt in het Bol.com verkoopaccount.",
     },
     {
         question: "Hoe werkt de voorraadcontrole?",
-        answer: "Onze voorraadcontrole controleert dagelijks de beschikbaarheid van je producten bij de leveranciers. Als een product niet meer op voorraad is, wordt het automatisch gedeactiveerd. Zodra het weer beschikbaar is, wordt het opnieuw geactiveerd.",
+        answer: "Onze voorraadcontrole checkt dagelijks de beschikbaarheid van je producten bij leveranciers. Als een product niet op voorraad is, wordt het automatisch gedeactiveerd. Zodra het weer leverbaar is, wordt het opnieuw geactiveerd.",
     },
     {
         question: "Wat zijn de verwachte inkomsten in de eerste maand?",
@@ -87,19 +87,19 @@ const faqs = [
     },
     {
         question: "Hoe werkt de fulfillment service?",
-        answer: "Bij onze fulfillment service verzenden wij je producten namens jou. De prijs is €8.50 per verzonden eenheid (excl. BTW en portokosten). Retouren worden afgehandeld voor €3 per retour. Wij zorgen voor professionele verpakking en snelle verzending.",
+        answer: "Met onze fulfillment service versturen wij je producten namens jou. De prijs is €8,50 per verzonden eenheid (excl. BTW en portokosten). Retouren worden verwerkt voor €3 per retour. Wij zorgen voor professionele verpakking en snelle verzending.",
     },
     {
-        question: "Kan ik de diensten los afnemen?",
-        answer: "Ja, alle diensten zijn los af te nemen. Je kunt kiezen voor alleen Producten Toevoegen, alleen Voorraadcontrole, alleen Fulfillment, of een combinatie die bij jouw situatie past.",
+        question: "Kan ik diensten ook los afnemen?",
+        answer: "Ja, alle diensten zijn los af te nemen. Je kunt kiezen voor alleen Producten Toevoegen, alleen Voorraadbeheer, alleen Fulfillment, of een combinatie die bij jouw situatie past.",
     },
     {
         question: "Wat kost het toevoegen van producten?",
-        answer: "De prijs per product hangt af van het volume: 3.001-5.000 producten: €0.45/product, 5.001-10.000 producten: €0.40/product, 10.000+ producten: €0.35/product. Alle prijzen zijn exclusief BTW.",
+        answer: "De prijs per product is afhankelijk van het volume: 3.001-5.000 producten: €0,45/product, 5.001-10.000 producten: €0,40/product, 10.000+ producten: €0,35/product. Alle prijzen zijn exclusief BTW.",
     },
     {
         question: "Hoe kan ik mijn abonnement opzeggen?",
-        answer: "Je kunt je abonnement op elk moment opzeggen - er zijn geen langlopende contracten. Neem contact op via WhatsApp of e-mail en wij regelen de opzegging voor je.",
+        answer: "Je kunt je abonnement op elk moment opzeggen - er zijn geen langlopende contracten. Neem contact met ons op via WhatsApp of e-mail en wij regelen de opzegging voor je.",
     },
 ];
 
@@ -121,16 +121,16 @@ export default function SupportPage() {
                         >
                             <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-6">
                                 <Headphones className="w-4 h-4" />
-                                Ondersteuning
+                                Support
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F8FAFC] leading-[1.1] mb-6">
-                                Hoe kunnen we je <span className="gradient-text">helpen</span>?
+                                Waarmee kunnen we je <span className="gradient-text">helpen</span>?
                             </h1>
 
                             <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed mb-8 max-w-2xl mx-auto">
                                 Stel je vraag via het contactformulier of neem direct contact op via WhatsApp.
-                                Ons team staat klaar om je te helpen.
+                                Ons team staat voor je klaar.
                             </p>
                         </motion.div>
                     </div>
@@ -207,7 +207,7 @@ export default function SupportPage() {
                         className="text-center mb-12"
                     >
                         <h2 className="text-2xl md:text-3xl font-bold text-[#F8FAFC] mb-4">
-                            Help Categorieën
+                            Hulp Categorieën
                         </h2>
                         <p className="text-[#94A3B8]">
                             Vind snel antwoord op je vragen
@@ -248,10 +248,10 @@ export default function SupportPage() {
                         >
                             <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                                 <HelpCircle className="w-4 h-4" />
-                                Vragen & Antwoorden
+                                Q&A
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                Veelgestelde <span className="gradient-text">vragen</span>
+                                Veelgestelde <span className="gradient-text">Vragen</span>
                             </h2>
                             <p className="text-lg text-[#94A3B8]">
                                 Meest gestelde vragen over onze diensten
@@ -281,7 +281,7 @@ export default function SupportPage() {
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
-                            <p className="text-[#64748B] mb-4">Staat je vraag er niet bij?</p>
+                            <p className="text-[#64748B] mb-4">Staat je vraag er niet tussen?</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link href="/contact">
                                     <Button
@@ -289,11 +289,11 @@ export default function SupportPage() {
                                         className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50"
                                     >
                                         <Mail className="w-5 h-5 mr-2" />
-                                        Contact Formulier
+                                        Contactformulier
                                     </Button>
                                 </Link>
                                 <a
-                                    href="https://wa.me/+31854012968?text=Hallo%20SellerConnect%20-%20Ik%20heb%20een%20vraag"
+                                    href="https://wa.me/+31854012968?text=Hallo%20SellerConnect"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

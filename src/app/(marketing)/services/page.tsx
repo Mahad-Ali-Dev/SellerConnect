@@ -57,7 +57,7 @@ const serviceCategories = [
         description: "Wij bouwen websites en applicaties die niet alleen mooi zijn, maar ook converteren. Met de nieuwste technologieën creëren we digitale ervaringen die je klanten niet snel vergeten.",
         color: "#6366F1",
         gradient: "from-[#6366F1] to-[#8B5CF6]",
-        stats: { projects: "200+", satisfaction: "99%", speed: "2x" },
+        stats: { projecten: "200+", tevredenheid: "99%", snelheid: "2x" },
         services: [
             {
                 icon: Palette,
@@ -111,7 +111,7 @@ const serviceCategories = [
         description: "Stop met handmatig werk. Wij automatiseren je bedrijfsprocessen zodat jij je kunt focussen op groei. Van eenvoudige workflows tot complexe integraties.",
         color: "#22D3EE",
         gradient: "from-[#22D3EE] to-[#06B6D4]",
-        stats: { timeSaved: "80%", accuracy: "100%", roi: "5x" },
+        stats: { "tijd bespaard": "80%", accuraatheid: "100%", roi: "5x" },
         services: [
             {
                 icon: Zap,
@@ -151,7 +151,7 @@ const serviceCategories = [
         description: "Van Bol.com tot Amazon, van Shopify tot WooCommerce. Wij helpen je verkopen op alle grote platformen met geautomatiseerde listings en voorraad management.",
         color: "#F59E0B",
         gradient: "from-[#F59E0B] to-[#F97316]",
-        stats: { channels: "15+", listings: "50K+", revenue: "€10M+" },
+        stats: { kanalen: "15+", listings: "50K+", omzet: "€10M+" },
         services: [
             {
                 icon: Globe,
@@ -245,7 +245,7 @@ const serviceCategories = [
         description: "Organisch verkeer is gratis verkeer. Wij optimaliseren je website voor zoekmachines zodat je gevonden wordt door klanten die actief zoeken naar jouw producten of diensten.",
         color: "#10B981",
         gradient: "from-[#10B981] to-[#059669]",
-        stats: { keywords: "5000+", traffic: "300%", position: "Top 3" },
+        stats: { keywords: "5000+", verkeer: "300%", positie: "Top 3" },
         services: [
             {
                 icon: Search,
@@ -285,7 +285,7 @@ const serviceCategories = [
         description: "Social media is waar je klanten hun tijd doorbrengen. Wij helpen je daar aanwezig te zijn met content die engagement creëert en je merk laat groeien.",
         color: "#8B5CF6",
         gradient: "from-[#8B5CF6] to-[#7C3AED]",
-        stats: { reach: "5M+", engagement: "8%", followers: "100K+" },
+        stats: { bereik: "5M+", engagement: "8%", volgers: "100K+" },
         services: [
             {
                 icon: Share2,

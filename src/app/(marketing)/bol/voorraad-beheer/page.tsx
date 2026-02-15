@@ -167,13 +167,13 @@ export default function BolVoorraadBeheerPage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                             <RefreshCw className="w-4 h-4" />
-                            How It Works
+                            Hoe Het Werkt
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Four verification <span className="gradient-text">layers</span>
+                            Vier verificatie <span className="gradient-text">lagen</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Our stock control tool runs four comprehensive checks to keep your inventory accurate
+                            Onze voorraadbeheertool voert vier uitgebreide controles uit om je voorraad nauwkeurig te houden
                         </p>
                     </motion.div>
 
@@ -216,18 +216,18 @@ export default function BolVoorraadBeheerPage() {
                             className="lg:w-1/2"
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                                Boost your store&apos;s <span className="gradient-text">performance</span>
+                                Verbeter de prestaties van je <span className="gradient-text">winkel</span>
                             </h2>
                             <p className="text-lg text-[#94A3B8] mb-8 leading-relaxed">
-                                Generate more revenue with products added to your Bol.com store. Our tools handle
-                                product research, listing optimization, and ongoing stock management so you can
-                                focus on scaling your business.
+                                Genereer meer omzet met producten die aan je Bol.com winkel zijn toegevoegd. Onze tools regelen
+                                productonderzoek, listing optimalisatie en doorlopend voorraadbeheer, zodat jij je kunt
+                                richten op het schalen van je bedrijf.
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                                 {[
-                                    { icon: Shield, label: "Fewer cancellations" },
-                                    { icon: TrendingUp, label: "Higher revenue" },
-                                    { icon: Clock, label: "Automated daily checks" },
+                                    { icon: Shield, label: "Minder annuleringen" },
+                                    { icon: TrendingUp, label: "Hogere omzet" },
+                                    { icon: Clock, label: "Geautomatiseerde dagelijkse controles" },
                                     { icon: Zap, label: "Real-time updates" },
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-3 text-[#E2E8F0]">
@@ -243,7 +243,7 @@ export default function BolVoorraadBeheerPage() {
                                     size="lg"
                                     className="h-12 px-6 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25"
                                 >
-                                    Start Now
+                                    Start Nu
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
@@ -261,15 +261,15 @@ export default function BolVoorraadBeheerPage() {
                                     <div className="w-3 h-3 rounded-full bg-[#EF4444]" />
                                     <div className="w-3 h-3 rounded-full bg-[#FACC15]" />
                                     <div className="w-3 h-3 rounded-full bg-[#22C55E]" />
-                                    <span className="text-xs text-[#64748B] ml-2">Stock Control Dashboard</span>
+                                    <span className="text-xs text-[#64748B] ml-2">Voorraadbeheer Dashboard</span>
                                 </div>
                                 <div className="space-y-3">
                                     {[
-                                        { label: "ASIN Check", status: "Passed", color: "#22C55E" },
-                                        { label: "Delivery Date", status: "Verified", color: "#22C55E" },
-                                        { label: "Address Check", status: "Confirmed", color: "#22C55E" },
-                                        { label: "Stock Level", status: "2,847 units", color: "#6366F1" },
-                                        { label: "Last Sync", status: "2 min ago", color: "#22D3EE" },
+                                        { label: "ASIN Controle", status: "Geslaagd", color: "#22C55E" },
+                                        { label: "Leverdatum", status: "Geverifieerd", color: "#22C55E" },
+                                        { label: "Adres Controle", status: "Bevestigd", color: "#22C55E" },
+                                        { label: "Voorraadniveau", status: "2.847 eenheden", color: "#6366F1" },
+                                        { label: "Laatste Sync", status: "2 min geleden", color: "#22D3EE" },
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-center justify-between py-3 px-4 bg-[#020617]/50 rounded-lg border border-[#1E293B]">
                                             <span className="text-sm text-[#94A3B8]">{item.label}</span>
@@ -294,10 +294,10 @@ export default function BolVoorraadBeheerPage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                            Choose your <span className="gradient-text">plan</span>
+                            Kies je <span className="gradient-text">pakket</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Billed monthly. Prices exclude VAT. Stock checks run twice daily.
+                            Maandelijks gefactureerd. Prijzen excl. BTW. Voorraadcontroles draaien twee keer per dag.
                         </p>
                     </motion.div>
 
@@ -314,14 +314,14 @@ export default function BolVoorraadBeheerPage() {
                                 <div className={`h-full rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1 relative ${plan.popular ? 'bg-[#6366F1]/5 border-[#6366F1]/40' : 'bg-[#0F172A]/50 border-[#1E293B] hover:border-[#6366F1]/30'}`}>
                                     {plan.popular && (
                                         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white text-xs font-medium px-3 py-1 rounded-full">
-                                            Most Popular
+                                            Meest Populair
                                         </div>
                                     )}
                                     <h3 className="text-lg font-bold text-[#F8FAFC] mb-1">{plan.name}</h3>
-                                    <p className="text-sm text-[#64748B] mb-4">Max. {plan.products} Products</p>
+                                    <p className="text-sm text-[#64748B] mb-4">Max. {plan.products} Producten</p>
                                     <div className="mb-6">
                                         <span className="text-4xl font-bold text-[#F8FAFC]">€{plan.price}</span>
-                                        <span className="text-[#64748B] text-sm">/month</span>
+                                        <span className="text-[#64748B] text-sm">/maand</span>
                                     </div>
                                     <ul className="space-y-3 mb-6">
                                         {features.map((feature) => (
@@ -333,7 +333,7 @@ export default function BolVoorraadBeheerPage() {
                                     </ul>
                                     <Link href="/bol/aanvraagformulier">
                                         <Button className={`w-full h-11 rounded-xl text-sm font-medium ${plan.popular ? 'bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white shadow-lg shadow-[#6366F1]/25' : 'bg-[#1E293B] text-[#F8FAFC] hover:bg-[#334155]'}`}>
-                                            Get Started
+                                            Starten
                                         </Button>
                                     </Link>
                                 </div>
@@ -359,7 +359,7 @@ export default function BolVoorraadBeheerPage() {
                                 FAQ
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                Frequently asked <span className="gradient-text">questions</span>
+                                Veelgestelde <span className="gradient-text">vragen</span>
                             </h2>
                         </motion.div>
 
@@ -386,11 +386,11 @@ export default function BolVoorraadBeheerPage() {
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
-                            <p className="text-[#64748B] mb-4">Still have questions?</p>
+                            <p className="text-[#64748B] mb-4">Nog vragen?</p>
                             <Link href="/contact">
                                 <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
                                     <MessageCircle className="w-5 h-5 mr-2" />
-                                    Contact us
+                                    Neem contact op
                                 </Button>
                             </Link>
                         </motion.div>
@@ -409,10 +409,10 @@ export default function BolVoorraadBeheerPage() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                            Start with the all-in-one <span className="gradient-text">earning model</span>
+                            Start met het alles-in-één <span className="gradient-text">verdienmodel</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
-                            We manage the entire sales process for your store from A to Z.
+                            Wij beheren het volledige verkoopproces voor je winkel van A tot Z.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/bol/aanvraagformulier">
@@ -420,7 +420,7 @@ export default function BolVoorraadBeheerPage() {
                                     size="lg"
                                     className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25"
                                 >
-                                    Get Started
+                                    Starten
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
@@ -430,7 +430,7 @@ export default function BolVoorraadBeheerPage() {
                                     variant="outline"
                                     className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50"
                                 >
-                                    Contact Us
+                                    Contact Ons
                                 </Button>
                             </Link>
                         </div>

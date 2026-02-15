@@ -4,47 +4,47 @@ import { motion } from "framer-motion";
 
 const testimonials = [
     {
-        name: "Pieter @TechStore",
+        name: "Peter @TechStore",
         handle: "@socialhotspot",
         avatar: "P",
-        text: "Briljante software. Ik run een e-commerce bedrijf met meer dan 30 klanten en een product-listing team en deze software heeft ons geholpen om onze service te verbeteren en het makkelijker te maken om meer klanten te tekenen.\n\nDe setup is makkelijk en het team is er altijd als er vragen beantwoord moeten worden.\n\n10/10",
+        text: "Briljante software. Ik beheer een e-commerce bedrijf met meer dan 30 klanten en een product listing team, en deze software heeft ons geholpen onze service te verbeteren en meer klanten aan te trekken.\n\nDe installatie is eenvoudig en het team staat altijd klaar om vragen te beantwoorden.\n\n10/10",
         featured: true,
     },
     {
-        name: "Daniel Broeks",
+        name: "Daniel Brooks",
         handle: "Private Investor",
         avatar: "D",
-        text: "We hebben geschaald naar 100k p/m met SellerConnect.\n\nSellerConnect springt erin en stelt ons echt in staat om de diamanten in het ruwe te vinden en onze inspanningen te maximaliseren zonder echt handmatige arbeid te hoeven toevoegen.",
+        text: "We schaalden naar 100k/mnd met SellerConnect.\n\nSellerConnect sprong in en stelde ons echt in staat om de diamanten in de ruwe te vinden en onze inspanningen te maximaliseren zonder handmatig werk toe te voegen.",
     },
     {
-        name: "Tim Prijs",
+        name: "Tim Price",
         handle: "Co-Founder @KST Marketing",
         avatar: "T",
-        text: "Ongelooflijke mogelijkheden. De SellerConnect AI doet een uitzonderlijk werk met het ophalen van producten door kwalificatievragen. Wat me het meest opviel was hoe effectief het pijnpunten identificeert en naadloos overgaat naar uploads. Het voelt als een hoogopgeleide medewerker die 24/7 werkt.",
+        text: "Ongelooflijke mogelijkheden. De SellerConnect AI doet uitzonderlijk werk bij het ophalen van producten. Wat het meeste opviel was hoe effectief het pijnpunten identificeert en naadloos overgaat tot uploads. Het voelt als een hoogopgeleide medewerker die 24/7 werkt.",
     },
     {
-        name: "Adam Goedhart",
+        name: "Adam Goodheart",
         handle: "Co-Founder @Conquer Growth",
         avatar: "A",
-        text: "Het team is super behulpzaam en gaat boven en buiten om je te helpen.",
+        text: "Het team is super behulpzaam en gaat tot het uiterste om je te helpen.",
     },
     {
         name: "Jay Dijk",
         handle: "Founder @GetMoreListings",
         avatar: "J",
-        text: "GAME CHANGER voor mijn product upload agency.\n\nSellerConnect heeft absoluut mijn agency gerevolutioneerd door ons een uitstekende USP te geven die we kunnen bieden aan onze klanten. Als je een agency bent, raad ik aan om het een kans te geven.",
+        text: "GAME CHANGER voor mijn product upload bureau.\n\nSellerConnect heeft mijn bureau absoluut gerevolutioneerd door ons een uitstekende USP te geven om aan onze klanten aan te bieden. Als je een bureau bent, raad ik je aan het een kans te geven.",
     },
     {
-        name: "Jamie Plat",
+        name: "Jamie Platt",
         handle: "Founder @NanoSite",
-        avatar: "JA",
-        text: "SellerConnect loste het grootste probleem op waarmee ik te maken had.\n\nWonend in NL, werkend op afstand voor BE, en het uploaden van producten betekende dat ik mijn slaapschema zou moeten opofferen. SellerConnect engageert met mijn producten direct 24/7, en ik heb consistent een 70-80% upload rate gezien.",
+        avatar: "J",
+        text: "SellerConnect loste mijn grootste probleem op.\n\nWonen in NL, op afstand werken voor BE, en producten uploaden betekende dat ik mijn slaapritme moest opofferen. SellerConnect werkt 24/7 direct met mijn producten, en ik zie constant een uploadpercentage van 70-80%.",
     },
     {
-        name: "Greg Smit",
+        name: "Greg Smith",
         handle: "Co-Founder @thebolt.leads",
         avatar: "G",
-        text: "We zijn zo blij dat we SellerConnect voor ons bedrijf hebben gevonden. Onze product kwaliteit is enorm verbeterd door het gebruik van deze software en onze klanten merken het verschil.",
+        text: "We zijn zo blij dat we SellerConnect hebben gevonden voor ons bedrijf. Onze productkwaliteit is comfortabel verbeterd met deze software en onze klanten zien het verschil.",
     },
 ];
 
@@ -62,10 +62,10 @@ export function TestimonialsGrid() {
                     className="mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold text-[#F8FAFC] mb-4">
-                        Dit is wat onze klanten<br />te zeggen hebben...
+                        Dit zeggen onze accounts...
                     </h2>
                     <p className="text-[#94A3B8] text-lg">
-                        Echte verhalen van onze gebruikers van over de hele wereld, allemaal met verschillende doelresultaten.
+                        Echte verhalen van onze gebruikers over de hele wereld.
                     </p>
                 </motion.div>
 

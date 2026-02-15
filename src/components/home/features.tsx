@@ -20,24 +20,24 @@ import { motion } from "framer-motion";
 const features = [
     {
         icon: Package,
-        title: "Product Uploads",
-        description: "Easily add thousands of products to Bol.com with our automated tools.",
+        title: "Producten Toevoegen",
+        description: "Voeg eenvoudig duizenden producten toe aan Bol.com met onze geautomatiseerde tools.",
         href: "/bol/producten-toevoegen",
         size: "large",
         gradient: "from-[#6366F1] to-[#8B5CF6]",
     },
     {
         icon: BarChart3,
-        title: "Stock Management",
-        description: "Real-time inventory sync prevents overselling.",
+        title: "Voorraadbeheer",
+        description: "Real-time voorraadsynchronisatie voorkomt oververkoop.",
         href: "/bol/voorraad-beheer",
         size: "small",
         gradient: "from-[#22D3EE] to-[#06B6D4]",
     },
     {
         icon: Shield,
-        title: "100% Buy Box",
-        description: "Win the Buy Box with proven strategies.",
+        title: "100% Koopblok",
+        description: "Win het koopblok met bewezen strategieën.",
         href: "/software",
         size: "small",
         gradient: "from-[#22C55E] to-[#10B981]",
@@ -45,15 +45,15 @@ const features = [
     {
         icon: Truck,
         title: "Fulfillment Services",
-        description: "We handle logistics so you can focus on growth and scaling your business.",
+        description: "Wij regelen de logistiek zodat jij je kunt focussen op groei en het schalen van je bedrijf.",
         href: "/bol/fulfillment",
         size: "large",
         gradient: "from-[#F59E0B] to-[#EAB308]",
     },
     {
         icon: Zap,
-        title: "Automation",
-        description: "Save time with automated workflows.",
+        title: "Automatisering",
+        description: "Bespaar tijd met geautomatiseerde workflows.",
         href: "/how-it-works",
         size: "small",
         gradient: "from-[#EC4899] to-[#F43F5E]",
@@ -61,7 +61,7 @@ const features = [
     {
         icon: TrendingUp,
         title: "Analytics",
-        description: "Deep insights into your performance.",
+        description: "Diepe inzichten in je prestaties.",
         href: "/software",
         size: "small",
         gradient: "from-[#8B5CF6] to-[#A855F7]",
@@ -69,7 +69,7 @@ const features = [
     {
         icon: Globe,
         title: "Multi-Channel",
-        description: "Connect all your sales channels in one dashboard. Sync across platforms seamlessly.",
+        description: "Verbind al je verkoopkanalen in één dashboard. Synchroniseer naadloos over platformen heen.",
         href: "/integrations",
         size: "large",
         gradient: "from-[#14B8A6] to-[#22D3EE]",
@@ -77,7 +77,7 @@ const features = [
     {
         icon: Clock,
         title: "24/7 Sync",
-        description: "Round-the-clock synchronization.",
+        description: "Dag en nacht synchronisatie.",
         href: "/software",
         size: "small",
         gradient: "from-[#6366F1] to-[#22D3EE]",
@@ -85,7 +85,7 @@ const features = [
     {
         icon: Headphones,
         title: "Support",
-        description: "Expert assistance when you need it.",
+        description: "Expert ondersteuning wanneer je het nodig hebt.",
         href: "/support",
         size: "small",
         gradient: "from-[#F43F5E] to-[#EC4899]",
@@ -112,14 +112,14 @@ export function Features() {
                 >
                     <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                         <Zap className="w-4 h-4" />
-                        Why Choose SellerConnect
+                        Waarom Kiezen Voor SellerConnect
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                        Everything you need to{" "}
-                        <span className="gradient-text">grow</span>
+                        Alles wat je nodig hebt om te{" "}
+                        <span className="gradient-text">groeien</span>
                     </h2>
                     <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                        From product uploads to fulfillment, we provide a complete solution for your Bol.com sales
+                        Van product uploads tot fulfillment, wij bieden een complete oplossing voor jouw Bol.com verkopen
                     </p>
                 </motion.div>
 
@@ -151,7 +151,7 @@ export function Features() {
 
                                     {/* Link */}
                                     <span className="inline-flex items-center gap-2 text-[#6366F1] font-medium text-sm group-hover:gap-3 transition-all">
-                                        Learn more
+                                        Meer info
                                         <ArrowRight className="w-4 h-4" />
                                     </span>
                                 </div>
@@ -170,7 +170,7 @@ export function Features() {
                     <Link href="/pricing">
                         <MagicWrapper>
                             <ShimmerButton className="shadow-2xl h-12 px-6 rounded-xl">
-                                View all pricing
+                                Bekijk alle prijzen
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </ShimmerButton>
                         </MagicWrapper>

@@ -98,13 +98,13 @@ export default function BolPrijzenPage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <CreditCard className="w-4 h-4" />
-                            All Pricing
+                            Alle Prijzen
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F8FAFC] leading-[1.1] mb-6">
-                            Transparent <span className="gradient-text">Pricing</span>
+                            Transparante <span className="gradient-text">Prijzen</span>
                         </h1>
                         <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed max-w-2xl mx-auto">
-                            Save time and convert it directly into money. Choose the plan that fits your business.
+                            Bespaar tijd en zet het direct om in geld. Kies het pakket dat bij jouw bedrijf past.
                         </p>
                     </motion.div>
                 </div>
@@ -122,13 +122,13 @@ export default function BolPrijzenPage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                             <Package className="w-4 h-4" />
-                            Product Addition
+                            Producten Toevoegen
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F8FAFC] mb-4">
-                            Product <span className="gradient-text">Listing</span> Prices
+                            Product <span className="gradient-text">Listing</span> Prijzen
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Let us add high-demand products to your Bol.com store with guaranteed Buy Box placement
+                            Laat ons veelgevraagde producten aan je Bol.com winkel toevoegen met gegarandeerde koopblok positie
                         </p>
                     </motion.div>
 
@@ -141,17 +141,17 @@ export default function BolPrijzenPage() {
                             className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] overflow-hidden"
                         >
                             <div className="p-6 border-b border-[#1E293B]">
-                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Per Product Addition</h3>
-                                <p className="text-sm text-[#94A3B8]">Price per individual product listing</p>
+                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Per Product Toevoegen</h3>
+                                <p className="text-sm text-[#94A3B8]">Prijs per individuele product listing</p>
                             </div>
                             <div className="p-6 space-y-4">
                                 {productAdditionPricing.map((tier) => (
                                     <div key={tier.range} className="flex items-center justify-between py-3 px-4 rounded-xl bg-[#020617]/50 border border-[#1E293B]">
-                                        <span className="text-[#94A3B8] text-sm">{tier.range} products</span>
-                                        <span className="text-[#F8FAFC] font-bold text-lg">{tier.price}<span className="text-xs text-[#64748B] font-normal">/unit</span></span>
+                                        <span className="text-[#94A3B8] text-sm">{tier.range} producten</span>
+                                        <span className="text-[#F8FAFC] font-bold text-lg">{tier.price}<span className="text-xs text-[#64748B] font-normal">/stuk</span></span>
                                     </div>
                                 ))}
-                                <p className="text-xs text-[#64748B] text-center">All prices exclude VAT</p>
+                                <p className="text-xs text-[#64748B] text-center">Alle prijzen zijn excl. BTW</p>
                             </div>
                         </motion.div>
 
@@ -164,17 +164,17 @@ export default function BolPrijzenPage() {
                             className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] overflow-hidden"
                         >
                             <div className="p-6 border-b border-[#1E293B]">
-                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Bulk Product Transfer</h3>
-                                <p className="text-sm text-[#94A3B8]">Transfer products between stores</p>
+                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Bulk Product Overdracht</h3>
+                                <p className="text-sm text-[#94A3B8]">Verhuis producten tussen winkels</p>
                             </div>
                             <div className="p-6 space-y-4">
                                 {productTransferPricing.map((tier) => (
                                     <div key={tier.range} className="flex items-center justify-between py-3 px-4 rounded-xl bg-[#020617]/50 border border-[#1E293B]">
-                                        <span className="text-[#94A3B8] text-sm">{tier.range} products</span>
+                                        <span className="text-[#94A3B8] text-sm">{tier.range} producten</span>
                                         <span className="text-[#F8FAFC] font-bold text-lg">{tier.price}</span>
                                     </div>
                                 ))}
-                                <p className="text-xs text-[#64748B] text-center">All prices exclude VAT</p>
+                                <p className="text-xs text-[#64748B] text-center">Alle prijzen zijn excl. BTW</p>
                             </div>
                         </motion.div>
                     </div>
@@ -193,13 +193,13 @@ export default function BolPrijzenPage() {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                             <BarChart3 className="w-4 h-4" />
-                            Stock Control
+                            Voorraadbeheer
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F8FAFC] mb-4">
-                            Stock Control <span className="gradient-text">Plans</span>
+                            Voorraadbeheer <span className="gradient-text">Pakketten</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            Billed monthly. Prices exclude VAT. Stock checks performed twice daily.
+                            Maandelijks gefactureerd. Prijzen excl. BTW. Voorraadchecks 2x per dag.
                         </p>
                     </motion.div>
 
@@ -215,14 +215,14 @@ export default function BolPrijzenPage() {
                                 <div className={`h-full rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1 relative ${plan.popular ? 'bg-[#6366F1]/5 border-[#6366F1]/40' : 'bg-[#0F172A]/50 border-[#1E293B] hover:border-[#6366F1]/30'}`}>
                                     {plan.popular && (
                                         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white text-xs font-medium px-3 py-1 rounded-full">
-                                            Most Popular
+                                            Meest Gekozen
                                         </div>
                                     )}
                                     <h3 className="text-lg font-bold text-[#F8FAFC] mb-1">{plan.name}</h3>
-                                    <p className="text-sm text-[#64748B] mb-4">Max. {plan.products} Products</p>
+                                    <p className="text-sm text-[#64748B] mb-4">Max. {plan.products} Producten</p>
                                     <div className="mb-6">
                                         <span className="text-4xl font-bold text-[#F8FAFC]">€{plan.price}</span>
-                                        <span className="text-[#64748B] text-sm">/month</span>
+                                        <span className="text-[#64748B] text-sm">/maand</span>
                                     </div>
                                     <ul className="space-y-3 mb-6">
                                         {stockFeatures.map((feature) => (
@@ -234,7 +234,7 @@ export default function BolPrijzenPage() {
                                     </ul>
                                     <Link href="/bol/aanvraagformulier">
                                         <Button className={`w-full h-11 rounded-xl text-sm font-medium ${plan.popular ? 'bg-gradient-to-r from-[#6366F1] to-[#22D3EE] text-white shadow-lg shadow-[#6366F1]/25' : 'bg-[#1E293B] text-[#F8FAFC] hover:bg-[#334155]'}`}>
-                                            Get Started
+                                            Start Nu
                                         </Button>
                                     </Link>
                                 </div>
@@ -259,10 +259,10 @@ export default function BolPrijzenPage() {
                             Fulfillment
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F8FAFC] mb-4">
-                            Fulfillment <span className="gradient-text">Pricing</span>
+                            Fulfillment <span className="gradient-text">Prijzen</span>
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                            100% on-time delivery with professional packaging included
+                            100% op tijd geleverd met professionele verpakking inbegrepen
                         </p>
                     </motion.div>
 
@@ -277,21 +277,21 @@ export default function BolPrijzenPage() {
                                 <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Fulfillment Service</h3>
                                 <div className="mt-3">
                                     <span className="text-4xl font-bold text-[#F8FAFC]">€7.19</span>
-                                    <span className="text-[#64748B] text-sm">/unit (excl. VAT)</span>
+                                    <span className="text-[#64748B] text-sm">/stuk (excl. BTW)</span>
                                 </div>
-                                <p className="text-xs text-[#64748B] mt-1">Shipping label not included</p>
+                                <p className="text-xs text-[#64748B] mt-1">Verzendlabel niet inbegrepen</p>
                             </div>
                             <div className="p-6 space-y-3">
-                                {["Packaging materials", "Packing tape", "Filling material", "Shipping sticker", "Returns: €3.49/unit"].map((item) => (
+                                {["Verpakkingsmateriaal", "Tape", "Opvulmateriaal", "Verzendsticker", "Retouren: €3.49/stuk"].map((item) => (
                                     <div key={item} className="flex items-center gap-3 text-sm text-[#94A3B8]">
                                         <CheckCircle2 className="w-4 h-4 text-[#22C55E] flex-shrink-0" />
                                         {item}
                                     </div>
                                 ))}
                                 <div className="pt-4">
-                                    <p className="text-sm font-medium text-[#F8FAFC] mb-3">Free packaging:</p>
+                                    <p className="text-sm font-medium text-[#F8FAFC] mb-3">Gratis verpakking:</p>
                                     <div className="grid grid-cols-2 gap-2">
-                                        {["A4 Envelope", "Small Box", "Large Box", "XL Box"].map((pkg) => (
+                                        {["A4 Envelop", "Klein Doosje", "Grote Doos", "XL Doos"].map((pkg) => (
                                             <div key={pkg} className="flex items-center gap-2 py-2 px-3 bg-[#020617]/50 rounded-lg border border-[#1E293B]">
                                                 <Box className="w-4 h-4 text-[#6366F1]" />
                                                 <span className="text-xs text-[#94A3B8]">{pkg}</span>
@@ -310,10 +310,10 @@ export default function BolPrijzenPage() {
                             className="bg-[#0F172A]/50 backdrop-blur-sm rounded-2xl border border-[#1E293B] overflow-hidden"
                         >
                             <div className="p-6 border-b border-[#1E293B]">
-                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Warehouse & Storage</h3>
+                                <h3 className="text-xl font-bold text-[#F8FAFC] mb-1">Magazijn & Opslag</h3>
                                 <div className="mt-3">
                                     <span className="text-4xl font-bold text-[#F8FAFC]">€2.89</span>
-                                    <span className="text-[#64748B] text-sm">/m² daily (excl. VAT)</span>
+                                    <span className="text-[#64748B] text-sm">/m² per dag (excl. BTW)</span>
                                 </div>
                             </div>
                             <div className="p-6 space-y-3">
@@ -329,7 +329,7 @@ export default function BolPrijzenPage() {
                                             <span className="text-sm text-[#94A3B8]">{space.size}</span>
                                         </div>
                                         <span className={`text-xs font-medium px-2 py-1 rounded-full ${space.available ? 'bg-[#22C55E]/10 text-[#22C55E]' : 'bg-[#EF4444]/10 text-[#EF4444]'}`}>
-                                            {space.available ? "Available" : "Unavailable"}
+                                            {space.available ? "Beschikbaar" : "Niet beschikbaar"}
                                         </span>
                                     </div>
                                 ))}
@@ -355,7 +355,7 @@ export default function BolPrijzenPage() {
                                 FAQ
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                                Frequently asked <span className="gradient-text">questions</span>
+                                Veelgestelde <span className="gradient-text">vragen</span>
                             </h2>
                         </motion.div>
 
@@ -382,11 +382,11 @@ export default function BolPrijzenPage() {
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
-                            <p className="text-[#64748B] mb-4">Still have questions?</p>
+                            <p className="text-[#64748B] mb-4">Nog vragen?</p>
                             <Link href="/contact">
                                 <Button variant="outline" className="h-11 px-6 rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
                                     <MessageCircle className="w-5 h-5 mr-2" />
-                                    Contact us
+                                    Neem Contact Op
                                 </Button>
                             </Link>
                         </motion.div>
@@ -405,20 +405,20 @@ export default function BolPrijzenPage() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-6">
-                            Ready to <span className="gradient-text">get started</span>?
+                            Klaar om te <span className="gradient-text">starten</span>?
                         </h2>
                         <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto mb-8">
-                            Choose your plan and start growing your Bol.com store today.
+                            Kies je pakket en begin vandaag nog met het laten groeien van je Bol.com winkel.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/bol/aanvraagformulier">
                                 <Button size="lg" className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25">
-                                    Get Started <ArrowRight className="w-5 h-5 ml-2" />
+                                    Start Nu <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
                             <Link href="/contact">
                                 <Button size="lg" variant="outline" className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50">
-                                    Contact Us
+                                    Neem Contact Op
                                 </Button>
                             </Link>
                         </div>
