@@ -36,7 +36,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card, CardContent } from "@/components/ui/card"; // Added Card and CardContent
+
 
 const services = [
     { id: "product-addition", label: "Producten Toevoegen" },
