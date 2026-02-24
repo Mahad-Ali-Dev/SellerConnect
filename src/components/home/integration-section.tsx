@@ -44,7 +44,7 @@ export function IntegrationSection() {
                         </div>
 
                         <p className="text-[#94A3B8] text-sm mt-8">
-                            Je tools, <span className="text-[#6366F1]">supercharged</span>. Wij verbeteren wat je al gebruikt, we vervangen het niet.
+                            Je tools, <span className="text-[#6366F1]">versterkt</span>. Wij verbeteren wat je al gebruikt, we vervangen het niet.
                         </p>
                     </motion.div>
 

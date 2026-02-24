@@ -147,7 +147,7 @@ export function BusinessGrowthAnimation() {
                         className="space-y-2"
                     >
                         {[
-                            { name: "Product Listings", count: 2847, trend: "+12%" },
+                            { name: "Product Toevoegingen", count: 2847, trend: "+12%" },
                             { name: "Actieve Bestellingen", count: 156, trend: "+8%" },
                             { name: "Verzonden Vandaag", count: 89, trend: "+15%" },
                         ].map((item, i) => (

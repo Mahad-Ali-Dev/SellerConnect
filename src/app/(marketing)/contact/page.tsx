@@ -304,7 +304,7 @@ export default function ContactPage() {
                                         <Building2 className="w-6 h-6 text-[#6366F1]" />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold text-[#F8FAFC] mb-1">SellerConnect / Metazon</h3>
+                                        <h3 className="text-lg font-semibold text-[#F8FAFC] mb-1">SellerConnect</h3>
                                         <p className="text-[#94A3B8] text-sm">Torenallee 20, 5617BC, Eindhoven, Netherlands</p>
                                     </div>
                                 </div>

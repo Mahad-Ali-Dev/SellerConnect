@@ -43,7 +43,7 @@ const plans: Plan[] = [
         features: [
             "Productondersteuning ",
             "Accountbeheer",
-            "Order tracking ",
+            "Orderopvolging",
         ],
         ctaLink: "/contact",
     },

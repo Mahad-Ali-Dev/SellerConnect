@@ -44,7 +44,7 @@ const features = [
     },
     {
         icon: Truck,
-        title: "Fulfillment Services",
+        title: "Fulfillment Diensten",
         description: "Wij regelen de logistiek zodat jij je kunt focussen op groei en het schalen van je bedrijf.",
         href: "/bol/fulfillment",
         size: "large",

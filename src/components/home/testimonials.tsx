@@ -6,20 +6,20 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
     {
         name: "Mark de Vries",
-        role: "E-commerce Entrepreneur",
+        role: "E-commerce Ondernemer",
         company: "TechStore NL",
         rating: 5,
-        text: "SellerConnect transformed my Bol.com sales. Automation saves me hours weekly and revenue increased by 150%!",
-        highlight: "revenue increased by 150%",
+        text: "SellerConnect heeft mijn Bol.com verkopen getransformeerd. De automatisering bespaart me wekelijks uren en de omzet is met 150% gestegen!",
+        highlight: "omzet is met 150% gestegen",
         avatar: "MV",
     },
     {
         name: "Lisa van den Berg",
-        role: "Founder",
+        role: "Oprichter",
         company: "Fashion Forward",
         rating: 5,
-        text: "The stock control feature is amazing. No more overselling and customer satisfaction has improved enormously.",
-        highlight: "No more overselling",
+        text: "De voorraadcontrole is geweldig. Geen oververkoop meer en de klanttevredenheid is enorm verbeterd.",
+        highlight: "Geen oververkoop meer",
         avatar: "LB",
     },
     {
@@ -27,17 +27,17 @@ const testimonials = [
         role: "Operations Manager",
         company: "HomeGoods Plus",
         rating: 5,
-        text: "The support team is fantastic. They really think along and helped me optimize my entire operation.",
-        highlight: "optimize my entire operation",
+        text: "Het supportteam is fantastisch. Ze denken echt mee en hebben me geholpen mijn hele operatie te optimaliseren.",
+        highlight: "hele operatie te optimaliseren",
         avatar: "PJ",
     },
 ];
 
 const featuredTestimonial = {
     name: "James Bakker",
-    role: "6-figure Seller",
+    role: "Topverkoper",
     company: "@ecomexpert",
-    text: "We consistently process over 350 orders each day from just 2,000 products using SellerConnect. The automation is a game changer for scaling without extra staff.",
+    text: "We verwerken consequent meer dan 350 bestellingen per dag met slechts 2.000 producten via SellerConnect. De automatisering is een gamechanger voor het opschalen zonder extra personeel.",
     avatar: "JB",
 };
 
@@ -59,14 +59,14 @@ export function Testimonials() {
                 >
                     <div className="inline-flex items-center gap-2 bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] px-4 py-2 rounded-full text-sm font-medium mb-4">
                         <Star className="w-4 h-4 fill-current" />
-                        Testimonials
+                        Klantervaringen
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F8FAFC] mb-4">
-                        Here&apos;s what our{" "}
-                        <span className="gradient-text">clients</span> have to say
+                        Dit zeggen onze{" "}
+                        <span className="gradient-text">klanten</span>
                     </h2>
                     <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
-                        Trusted by 500+ sellers to grow their Bol.com business
+                        Vertrouwd door 500+ verkopers om hun Bol.com business te laten groeien
                     </p>
                 </motion.div>
 

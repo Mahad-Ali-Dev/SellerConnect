@@ -9,8 +9,8 @@ import { BusinessGrowthAnimation } from "./business-growth-animation";
 import { Typewriter } from "./typewriter";
 
 const services = [
-    "Product Listings",
-    "Fulfillment Services",
+    "Product Toevoegingen",
+    "Fulfillment Diensten",
     "Voorraadbeheer",
     "Order Automatisering",
     "Analytics & Inzichten",

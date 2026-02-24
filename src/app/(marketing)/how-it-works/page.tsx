@@ -135,7 +135,7 @@ export default function HowItWorksPage() {
                                     <div className="bg-[#0F172A]/50 backdrop-blur-sm rounded-3xl p-8 border border-[#1E293B] hover:border-[#6366F1]/30 transition-all duration-300 hover:shadow-2xl hover:shadow-[#6366F1]/10">
                                         <div className="flex flex-col md:flex-row gap-6 md:items-start justify-between mb-6">
                                             <div>
-                                                <div className="text-[#6366F1] font-bold mb-2 text-sm tracking-wider">STEP {step.id}</div>
+                                                <div className="text-[#6366F1] font-bold mb-2 text-sm tracking-wider">STAP {step.id}</div>
                                                 <h3 className="text-2xl font-bold text-[#F8FAFC] mb-3">{step.title}</h3>
                                                 <p className="text-[#94A3B8] leading-relaxed max-w-xl">
                                                     {step.description}
@@ -172,10 +172,10 @@ export default function HowItWorksPage() {
                             viewport={{ once: true }}
                         >
                             <h2 className="text-3xl md:text-4xl font-bold text-[#F8FAFC] mb-6">
-                                Ready to <span className="gradient-text">automate</span>?
+                                Klaar om te <span className="gradient-text">automatiseren</span>?
                             </h2>
                             <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-                                Join hundreds of other sellers using our platform to scale their Bol.com business.
+                                Sluit je aan bij honderden verkopers die ons platform gebruiken om hun Bol.com business te schalen.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -184,7 +184,7 @@ export default function HowItWorksPage() {
                                         size="lg"
                                         className="h-14 px-8 text-base font-medium rounded-xl bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white shadow-lg shadow-[#6366F1]/25"
                                     >
-                                        Start Free Trial
+                                        Start Gratis Proefperiode
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
                                 </Link>
@@ -194,7 +194,7 @@ export default function HowItWorksPage() {
                                         variant="outline"
                                         className="h-14 px-8 text-base font-medium rounded-xl border-[#334155] text-[#E5E7EB] hover:bg-[#1E293B]/50"
                                     >
-                                        Contact Sales
+                                        Neem Contact Op
                                     </Button>
                                 </Link>
                             </div>

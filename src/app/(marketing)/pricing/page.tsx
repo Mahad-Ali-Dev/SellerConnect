@@ -50,7 +50,7 @@ const softwarePlans = [
         features: [
             "Productondersteuning",
             "Accountmanagement",
-            "Order tracking",
+            "Orderopvolging",
         ],
     },
     {

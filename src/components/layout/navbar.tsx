@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronRight, ChevronDown, Zap, Package, BarChart3, Truck, CreditCard, Shield, FileText, MessageCircle, Laptop, Headphones, LogOut, User, Settings } from "lucide-react";
+import { Menu, X, ChevronRight, ChevronDown, Package, BarChart3, Truck, CreditCard, Shield, FileText, MessageCircle, Laptop, Headphones, LogOut, User, Settings } from "lucide-react";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSession, signOut } from "next-auth/react";
@@ -77,9 +78,13 @@ export function Navbar() {
             <div className="container mx-auto px-4 h-full flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 relative z-50">
-                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#6366F1] to-[#22D3EE] flex items-center justify-center">
-                        <Zap className="w-5 h-5 text-white" />
-                    </div>
+                    <Image
+                        src="/logo.jpeg"
+                        alt="SellerConnect"
+                        width={36}
+                        height={36}
+                        className="rounded-lg"
+                    />
                     <span className="text-xl font-bold text-[#F8FAFC] tracking-tight">
                         Seller<span className="text-[#6366F1]">Connect</span>
                     </span>

@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, Linkedin, Github, Zap } from "lucide-react";
+import { Twitter, Linkedin, Github } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
     return (
@@ -11,9 +12,13 @@ export function Footer() {
                     {/* Brand */}
                     <div className="col-span-2 lg:col-span-2">
                         <Link href="/" className="inline-flex items-center gap-2 mb-6">
-                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6366F1] to-[#22D3EE] flex items-center justify-center">
-                                <Zap className="w-4 h-4 text-white" />
-                            </div>
+                            <Image
+                                src="/logo.jpeg"
+                                alt="SellerConnect"
+                                width={32}
+                                height={32}
+                                className="rounded-lg"
+                            />
                             <span className="text-xl font-bold text-[#F8FAFC]">
                                 Seller<span className="text-[#6366F1]">Connect</span>
                             </span>
