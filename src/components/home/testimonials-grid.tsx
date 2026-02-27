@@ -46,6 +46,42 @@ const testimonials = [
         avatar: "G",
         text: "We zijn zo blij dat we SellerConnect hebben gevonden voor ons bedrijf. Onze productkwaliteit is comfortabel verbeterd met deze software en onze klanten zien het verschil.",
     },
+    {
+        name: "Sophie van der Berg",
+        handle: "Eigenaar @KidsPlayNL",
+        avatar: "S",
+        text: "Van 200 naar 1.800 actieve producten in 6 weken.\n\nVóór SellerConnect duurde het uploaden van één product soms een halve dag. Nu verwerkt de AI honderden producten terwijl ik slaap. Mijn Bol.com omzet is in 3 maanden verdrievoudigd.",
+    },
+    {
+        name: "Rens Akkerman",
+        handle: "Founder @SportDealsHub",
+        avatar: "R",
+        text: "Eindelijk een tool die echt begrijpt hoe Bol.com werkt.\n\nDe AI kiest automatisch de juiste categorieën, schrijft SEO-geoptimaliseerde titels en synchroniseert mijn voorraad in real-time. Geen fouten meer, geen gemiste listings. Absolute topservice.",
+    },
+    {
+        name: "Lena Hoekstra",
+        handle: "Manager @HomeEssentials",
+        avatar: "L",
+        text: "Onze Bol.com conversie is gestegen van 18% naar 41%.\n\nSellerConnect schrijft producttitels en -beschrijvingen die kopers aanspreken én hoog ranken. Het team dacht met ons mee en de resultaten spreken voor zich. Aanbevolen aan elk serieus e-commerce bedrijf.",
+    },
+    {
+        name: "Mark de Vries",
+        handle: "CEO @TechHouseNL",
+        avatar: "M",
+        text: "€150.000 extra omzet in het eerste jaar.\n\nIk was sceptisch of AI echt zo goed kon zijn als beloofd. Na drie maanden met SellerConnect kan ik bevestigen: het overtreft alle verwachtingen. Onze Bol.com winkel draait nu volledig op autopilot.",
+    },
+    {
+        name: "Iris Bakker",
+        handle: "Founder @NaturalBeautyNL",
+        avatar: "I",
+        text: "Perfecte integratie met mijn bestaande workflow.\n\nIk gebruik SellerConnect nu 8 maanden voor mijn beauty-winkel op Bol.com. De setup was binnen een dag klaar en ik hoef me nooit meer zorgen te maken over handmatige uploads of fouten in mijn catalog.",
+    },
+    {
+        name: "Thomas Brouwer",
+        handle: "Co-Founder @BulkBuysNL",
+        avatar: "T",
+        text: "Schalen was nog nooit zo makkelijk.\n\nWe verwerken nu meer dan 500 nieuwe producten per week voor 15 klanten. SellerConnect doet het zware werk — validatie, opmaak, upload en sync. Onze klanten zien het verschil direct in hun verkoopcijfers.",
+    },
 ];
 
 export function TestimonialsGrid() {
