@@ -5,6 +5,7 @@ import { OutperformsSection } from "@/components/home/outperforms-section";
 import { NurtureSection } from "@/components/home/nurture-section";
 import { ReviewsParallax } from "@/components/home/reviews-parallax";
 import { PipelineSection } from "@/components/home/pipeline-section";
+import { ClientResultsShowcase } from "@/components/home/client-results-showcase";
 import { ClientStoreStatsSection } from "@/components/home/client-store-stats";
 import { PricingSection } from "@/components/home/pricing-section";
 import { TestimonialsGrid } from "@/components/home/testimonials-grid";
@@ -17,6 +18,7 @@ export default function Home() {
             <Hero />
             <GeminiEffectSection />
             <OutperformsSection />
+            <ClientResultsShowcase />
             <NurtureSection />
             <ReviewsParallax />
             <PipelineSection />

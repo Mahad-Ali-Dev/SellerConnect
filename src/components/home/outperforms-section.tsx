@@ -301,7 +301,7 @@ export function OutperformsSection() {
                             Klaar om €{annualSavings > 0 ? annualSavings.toLocaleString() : '20,436'}/jaar te besparen?
                         </p>
                         <p className="text-[#94A3B8] mb-6">
-                            Start je 14-dagen gratis proefperiode en ervaar de resultaten zelf
+                            Start je 7-dagen gratis proefperiode en ervaar de resultaten zelf
                         </p>
                         <Link href="/auth/register">
                             <Button className="h-12 px-8 bg-gradient-to-r from-[#6366F1] to-[#22D3EE] hover:opacity-90 text-white rounded-xl font-medium shadow-lg shadow-[#6366F1]/25">
