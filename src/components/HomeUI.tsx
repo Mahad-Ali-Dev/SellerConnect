@@ -3,9 +3,11 @@
 import { Hero } from "@/components/home/hero";
 import { GeminiEffectSection } from "@/components/home/gemini-effect-section";
 import { OutperformsSection } from "@/components/home/outperforms-section";
+import { ClientResultsShowcase } from "@/components/home/client-results-showcase";
 import { NurtureSection } from "@/components/home/nurture-section";
 import { ReviewsParallax } from "@/components/home/reviews-parallax";
 import { PipelineSection } from "@/components/home/pipeline-section";
+import { ClientStoreStatsSection } from "@/components/home/client-store-stats";
 import { PricingSection } from "@/components/home/pricing-section";
 import { TestimonialsGrid } from "@/components/home/testimonials-grid";
 import { FAQ } from "@/components/home/faq";
@@ -17,9 +19,11 @@ export default function HomeUI() {
       <Hero />
       <GeminiEffectSection />
       <OutperformsSection />
+      <ClientResultsShowcase />
       <NurtureSection />
       <ReviewsParallax />
       <PipelineSection />
+      <ClientStoreStatsSection />
       <PricingSection />
       <TestimonialsGrid />
       <FAQ />
