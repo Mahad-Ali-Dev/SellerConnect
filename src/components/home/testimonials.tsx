@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
 const testimonials = [
     {
@@ -33,14 +33,6 @@ const testimonials = [
     },
 ];
 
-const featuredTestimonial = {
-    name: "James Bakker",
-    role: "Topverkoper",
-    company: "@ecomexpert",
-    text: "We verwerken consequent meer dan 350 bestellingen per dag met slechts 2.000 producten via SellerConnect. De automatisering is een gamechanger voor het opschalen zonder extra personeel.",
-    avatar: "JB",
-};
-
 export function Testimonials() {
     return (
         <section className="py-24 bg-[#020617] relative overflow-hidden">
@@ -68,41 +60,6 @@ export function Testimonials() {
                     <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">
                         Vertrouwd door 500+ verkopers om hun Bol.com business te laten groeien
                     </p>
-                </motion.div>
-
-                {/* Featured Testimonial */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="max-w-4xl mx-auto mb-12"
-                >
-                    <div className="relative">
-                        {/* Glow Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#6366F1]/20 to-[#22D3EE]/20 rounded-3xl blur-xl" />
-
-                        <div className="relative bg-[#0F172A]/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#6366F1]/30">
-                            <Quote className="w-12 h-12 text-[#6366F1]/30 mb-6" />
-
-                            <p className="text-xl md:text-2xl text-[#F8FAFC] leading-relaxed mb-8 font-medium">
-                                &ldquo;{featuredTestimonial.text}&rdquo;
-                            </p>
-
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#6366F1] to-[#22D3EE] flex items-center justify-center text-white font-bold text-lg">
-                                    {featuredTestimonial.avatar}
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-[#F8FAFC] text-lg">
-                                        {featuredTestimonial.name}
-                                    </h4>
-                                    <p className="text-[#6366F1]">
-                                        {featuredTestimonial.role} {featuredTestimonial.company}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </motion.div>
 
                 {/* Testimonial Grid */}

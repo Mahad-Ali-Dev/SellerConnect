@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { TrendingUp, Package, Star, ShoppingCart, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 function AnimatedCounter({
     value,
@@ -56,7 +57,9 @@ const clientStores = [
         conversionRate: 38,
         growth: 156,
         color: "#6366F1",
-        pdfSrc: "/assets/Untitled design (2).pdf",
+        glowColor: "rgba(99,102,241,0.14)",
+        borderColor: "rgba(99,102,241,0.35)",
+        imageSrc: "/Screenshot 2026-02-27 062214.png",
         chartPath: "M0,55 Q30,48 60,38 T110,22 T160,12 T200,4",
     },
     {
@@ -67,7 +70,9 @@ const clientStores = [
         conversionRate: 42,
         growth: 203,
         color: "#22D3EE",
-        pdfSrc: "/assets/Untitled design (3).pdf",
+        glowColor: "rgba(34,211,238,0.12)",
+        borderColor: "rgba(34,211,238,0.35)",
+        imageSrc: "/Screenshot 2026-02-27 062247.png",
         chartPath: "M0,55 Q40,44 80,30 T140,16 T200,4",
     },
     {
@@ -78,7 +83,9 @@ const clientStores = [
         conversionRate: 35,
         growth: 189,
         color: "#A78BFA",
-        pdfSrc: "/assets/Untitled design (5).pdf",
+        glowColor: "rgba(167,139,250,0.12)",
+        borderColor: "rgba(167,139,250,0.35)",
+        imageSrc: "/Screenshot 2026-02-27 062312.png",
         chartPath: "M0,52 Q35,42 70,32 T130,18 T200,5",
     },
 ];
@@ -291,7 +298,7 @@ export function ClientStoreStatsSection() {
                     ))}
                 </div>
 
-                {/* PDF Reports - Display as embedded previews */}
+                {/* Screenshot Reports */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -312,44 +319,69 @@ export function ClientStoreStatsSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="rounded-2xl border border-[#1E293B] overflow-hidden bg-[#0F172A]/50 backdrop-blur-sm hover:border-[#6366F1]/40 transition-all duration-300"
+                                className="flex flex-col rounded-2xl overflow-hidden"
+                                style={{
+                                    background: `linear-gradient(155deg, ${store.glowColor} 0%, rgba(15,23,42,0.6) 60%)`,
+                                    border: `1px solid ${store.borderColor}`,
+                                    boxShadow: `0 0 48px ${store.glowColor}, 0 1px 0 ${store.borderColor}`,
+                                }}
                             >
-                                <div
-                                    className="relative overflow-hidden bg-[#0A0F1E]"
-                                    style={{ height: "280px" }}
-                                >
-                                    <iframe
-                                        src={`${store.pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-                                        className="w-full border-0"
-                                        style={{
-                                            height: "360px",
-                                            transform: "scale(0.85)",
-                                            transformOrigin: "top center",
-                                            marginTop: "-10px",
-                                            pointerEvents: "none",
-                                        }}
-                                        title={`${store.name} Rapport`}
-                                    />
-                                    {/* Gradient overlay at bottom */}
-                                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#0A0F1E] to-transparent" />
-                                </div>
-                                <div
-                                    className="px-5 py-4 flex items-center justify-between"
-                                    style={{ borderTop: `1px solid ${store.color}25` }}
-                                >
+                                {/* Top label */}
+                                <div className="flex items-center justify-between px-5 pt-4 pb-3">
                                     <div>
                                         <p className="text-[#F8FAFC] text-sm font-semibold">{store.name}</p>
-                                        <p className="text-[#64748B] text-xs">{store.category}</p>
+                                        <p className="text-[#475569] text-xs mt-0.5">{store.category}</p>
                                     </div>
                                     <div
-                                        className="text-xs font-semibold px-2 py-1 rounded-full"
+                                        className="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full"
                                         style={{
                                             color: store.color,
-                                            backgroundColor: `${store.color}15`,
+                                            background: `${store.color}18`,
+                                            border: `1px solid ${store.color}30`,
                                         }}
                                     >
+                                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: store.color }} />
                                         +{store.growth}% groei
                                     </div>
+                                </div>
+
+                                {/* Screenshot with browser chrome */}
+                                <div className="mx-4 rounded-xl overflow-hidden border border-[#1E293B]">
+                                    {/* Browser chrome */}
+                                    <div className="flex items-center gap-1.5 px-3 py-2 bg-[#0D1424] border-b border-[#1E293B]">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#EF4444]/55" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]/55" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#22C55E]/55" />
+                                        <div className="ml-2 flex-1 bg-[#1E293B] rounded px-2 py-0.5 text-[10px] text-[#475569] truncate">
+                                            bol.com › Verkopersplatform › Verkoop­overzicht
+                                        </div>
+                                    </div>
+
+                                    {/* Screenshot */}
+                                    <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
+                                        <Image
+                                            src={store.imageSrc}
+                                            alt={`${store.name} dashboard`}
+                                            fill
+                                            className="object-cover object-top"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                        <div
+                                            className="absolute bottom-0 left-0 right-0 h-10 pointer-events-none"
+                                            style={{ background: "linear-gradient(to top, #0D1424 10%, transparent)" }}
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Footer */}
+                                <div className="flex items-center justify-between px-5 py-4 mt-auto">
+                                    <span className="text-[#475569] text-xs">Geverifieerd via Bol.com portaal</span>
+                                    <span
+                                        className="flex items-center gap-1 text-xs font-semibold"
+                                        style={{ color: store.color }}
+                                    >
+                                        Bekijk details <ArrowUpRight className="w-3 h-3" />
+                                    </span>
                                 </div>
                             </motion.div>
                         ))}
